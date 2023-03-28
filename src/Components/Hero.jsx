@@ -9,7 +9,6 @@ const Hero = (props) => {
     return null;
   }
 
-  console.log(props.coins);
 
   return (
     <section id="Home" className="hero-section">

@@ -85,7 +85,7 @@ const CryptoNews = () => {
                   className="form-inputs"
                   type="Email"
                   placeholder="Email"
-                  defaultValue="readOnly"
+                  defaultValue=" "
                 />
               </div>
               <textarea
@@ -94,7 +94,7 @@ const CryptoNews = () => {
                 cols="30"
                 rows="10"
                 placeholder="Your Message"
-                defaultValue="readOnly"
+                defaultValue="Your Message "
               ></textarea>
               <input type="Submit" defaultValue="send"  />
             </form>
