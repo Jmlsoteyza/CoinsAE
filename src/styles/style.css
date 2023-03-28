@@ -715,3 +715,21 @@ form textarea {
   padding-bottom: 2rem;
   text-align: center;
 }
+
+.section__padding {
+  padding: 4rem 4rem;
+}
+
+.footer {
+  background-color: #2d2d32;
+}
+
+.sb__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.sb__footer-Links {
+  display: flex;
+  justify-content: space-between;
+}
