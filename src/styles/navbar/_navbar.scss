@@ -1,0 +1,56 @@
+.navbar {
+    font-family: "Space Grotesk", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+   
+  
+    color: white;
+    text-decoration: none;
+  
+    h1 {
+      font-size: 30px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+  
+  .ul-container {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    cursor: pointer;
+  
+    li {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    li:hover {
+      background-image: linear-gradient(
+        to right,
+        rgba(115, 17, 161, 1),
+        rgba(19, 132, 195, 1)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: all 0.3s;
+    }
+  }
+  .stickyBar {
+    background-color: transparent;
+    // box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    // position: fixed;
+    background-color: #14141f;;
+    border-bottom: 1px solid rgba(235, 235, 235, 0.2);
+    width: 100%;
+  }
+  

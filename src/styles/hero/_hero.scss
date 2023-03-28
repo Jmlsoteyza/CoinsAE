@@ -1,0 +1,120 @@
+@import "../main-scss";
+
+.hero-section {
+  width: 100%;
+  text-align: center;
+  // transform: translateY(7rem);
+  background-color: #14141f;
+  padding-bottom: 18rem;
+
+  .heroTextAndImage {
+    text-align: center;
+  }
+
+  .nextgen-text {
+    font-size: $header-text;
+    font-weight: 700;
+  }
+  .cryptomarket-text {
+    font-size: $header-text;
+    font-weight: 700;
+  }
+}
+.bg-gradient {
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 528px;
+    height: 327px;
+    user-select: none;
+}
+  }
+
+.bitcoin-img {
+  transform: translate(-35rem, 5rem);
+}
+.ethereum-img {
+  transform: translate(50rem, -10.5rem);
+}
+.crypto-text {
+  background: #7311a1;
+  background: linear-gradient(to top left, #7311a1 0%, #1384c3 77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.coins-chart-container {
+  display: flex;
+  width: 100%;
+  // border: 1px solid red;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: white;
+    font-size: 20px;
+  }
+
+  .coins-chart-text_displayBlock {
+    display: flex;
+    gap: 1rem;
+  }
+
+  img {
+    width: 90px;
+    height: 90px;
+  }
+}
+.coins-chart {
+  padding: 2rem 2rem;
+  position: relative;
+  background-color: #131313;
+  position: relative;
+
+  .coins-chart_rank {
+    position: absolute;
+    left: 0;
+    top: 3%;
+    border-radius: 19px 0 0px 0;
+    padding: 0.5rem 1rem;
+    height: 75px;
+    width: 88px;
+    background-color: #242424;
+    border-radius: 19px 0 0px 0;
+    border: 14px solid #131313;
+
+    p {
+      font-size: 25px;
+      // background: linear-gradient(to right, rgba(115, 17, 161, 1), rgba(19, 132, 195, 1));
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .coins-chart-border {
+    border: 1px solid transparent;
+    border-image: linear-gradient(
+        to right,
+        rgba(115, 17, 161, 1),
+        rgba(19, 132, 195, 1)
+      )
+      1;
+    padding: 2rem 7rem;
+  }
+}
+
+.coins-chart:hover {
+  .coins-name {
+    background-image: linear-gradient(
+      to right,
+      rgba(115, 17, 161, 1),
+      rgba(19, 132, 195, 1)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.3s;
+    // color: green;
+  }
+}

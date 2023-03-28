@@ -1,0 +1,136 @@
+
+.market-container {
+    background-color: #14141f;
+    padding-bottom: 15rem;
+    color: #fff;
+  }
+  .Market-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 120rem;
+    //   border: 1px solid red;
+    margin: 0 auto;
+    width: 100%;
+   
+    p {
+      font-size: 22px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .green-text {
+    color: #0ecb81;
+  }
+  .red-text {
+    color: #f6465d;
+  }
+  .Market-names_container {
+    display: flex;
+    flex-direction: column;
+    //   border: 1px solid blue;
+    height: auto;
+    overflow: auto;
+  }
+  
+  .Market-names {
+    grid-gap: 2rem;
+    align-items: center;
+    border-bottom: 1px solid #474d57;
+    color: #fff;
+    display: grid;
+    font-size: 2.2rem;
+    font-weight: 500;
+    gap: 2rem;
+    grid-template-columns: 26fr 26fr 26fr 26fr 26fr;
+    height: auto;
+    padding: 2.5rem 1.5rem;
+    text-align: right;
+    width: 100%;
+    .coin-text {
+      margin-left: 0;
+      padding-left: 0;
+      text-align: left;
+    }
+  }
+  .coin-row {
+    grid-gap: 2rem;
+    align-items: center;
+    border-bottom: 1px solid #474d57;
+    color: #fff;
+    display: grid;
+    font-size: 2.2rem;
+    font-weight: 500;
+    gap: 3rem;
+    grid-template-columns: 26fr 26fr 26fr 26fr 26fr;
+    max-height: 101px;
+    padding: 2.5rem 1.5rem;
+    text-align: right;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 100%;
+    background-color: transparent;
+  
+    p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  
+    img {
+      height: 50px;
+    }
+    .img-symbol {
+      display: flex;
+      gap: 1.2rem;
+      word-wrap: break-word;
+      text-align: left;
+      text-overflow: clip;
+      align-items: center;
+    }
+  }
+  .search-text {
+    h2 {
+      font-size: 4.5rem;
+    }
+  }
+  .paginationButtons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0.5rem;
+    font-family: roboto monospace;
+  
+    button {
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      border-radius: 5px;
+    }
+  
+    .previousbutton-style,
+    .nextbutton-style {
+      color: rgb(183, 189, 198);
+      background-color: transparent;
+      font-weight: 700;
+      font-size: 15px;
+    }
+  }
+  
+  .paginationButtons button:hover {
+    background-color: #f8f8f81f;
+  }
+  
+  .paginationButtons button.active {
+    background-color: #f8f8f81f;
+    color: #fff;
+  }
+  
