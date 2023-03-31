@@ -50,8 +50,8 @@ const MarketItem = (props) => {
               {props.coins.price_change_percentage_24h.toFixed(2)}%
             </p>
             <p>$ {props.coins.market_cap.toLocaleString()}</p>
-            <p>
-              <Sparklines data={props.coins.sparkline_in_7d.price}>
+            <p className="market-size">
+              <Sparklines className="market-size" data={props.coins.sparkline_in_7d.price}>
                 <SparklinesLine color="#2ECC71" />
               </Sparklines>
             </p>

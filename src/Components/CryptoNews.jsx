@@ -27,7 +27,7 @@ const CryptoNews = () => {
                   <div className="contact-us_adress_container">
                     <div className="contact-us_andress">
                     <img src={callIcon}/>
-                      <p>+54 3196 753</p>
+                      <p>+58 165 4064</p>
                     </div>
                     <div className="contact-us_andress">
                     <img src={atIcon} />

@@ -120,3 +120,24 @@
     // color: green;
   }
 }
+
+@media (max-width: 1150px) {
+	.ethereum-img {
+		transform: translate(35rem, -29.5rem);
+	}
+  
+}
+@media (max-width: 900px) {
+  
+
+  .ethereum-img, .bitcoin-img {
+    display: none;
+  }
+  .hero-section {
+    padding-top: 5rem;
+  }
+  .coins-chart-container {
+    margin-top: 5rem;
+  }
+ 
+}

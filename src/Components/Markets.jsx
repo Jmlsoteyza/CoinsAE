@@ -73,7 +73,7 @@ const Markets = (props) => {
           <p>Price</p>
           <p>24h Change</p>
           <p>Market Cap</p>
-          <p>7 Days</p>
+          <p>7 Days</p> 
         </div>
 
         {loading ? (

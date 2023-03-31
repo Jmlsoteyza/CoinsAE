@@ -28,7 +28,8 @@
   flex-direction: column;
   //   border: 1px solid blue;
   height: auto;
-  overflow: auto;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 .market-icon_img:hover {
   border: 1px solid #5142fc;
@@ -72,8 +73,6 @@
 .Market-names {
   grid-gap: 2rem;
   align-items: center;
-  // border-bottom: 1px solid #474d57;
-  /* From https://css.glass */
   background: rgba(255, 255, 255, 0.11);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.5px);
@@ -114,6 +113,7 @@
   user-select: none;
   width: 100%;
   background-color: transparent;
+  
 
   p {
     white-space: nowrap;
@@ -184,4 +184,36 @@
 .paginationButtons button.active {
   background-color: #f8f8f81f;
   color: #fff;
+}
+@media (max-width: 900px) {
+    .Market-names {
+      width: 900px;
+      overflow-x: auto;
+    }
+    .coin-row {
+      overflow-x: auto;
+      width: 900px;
+      text-align: right;
+    }
+  .Market-names_container{
+    
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+
+    p {
+      font-size: 14px;
+    }
+
+    .Market-names  {
+      box-shadow: none;
+    }
+  }
+  
 }

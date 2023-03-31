@@ -5,12 +5,13 @@
 
 .footer {
   background-color: #030303;
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 .logoHeader_footer {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  padding-bottom: 3rem;
 }
 .logoHeader_footer {
   .logo {
@@ -18,35 +19,102 @@
 
   }
 }
+.sb__footer-Links_form {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  position: relative;
 
+  input {
+    border-radius: 10px;
+    background: #F8F8F8;
+    width: 100%;
+    padding: 15px 10px 15px 22px;
+    font-size: 14px;
+    border: 1px solid rgba(138, 138, 160, 0.3);
+    background-color: transparent;
+    color: white;
+  }
+
+  button {
+    background-color: #5142fc;
+    outline: none;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    // padding: 15px 10px 12px 22px;
+    padding: 1.3rem 1.5rem;
+    
+    
+  }
+  .sendLogo {
+    align-items: center;
+    text-align: center;
+    width: 18px;
+    height: 18px;
+  }
+}
 .sb__footer {
   display: flex;
   flex-direction: column;
+
+  p {
+    font-size: 14px;
+    padding-bottom: 14px;
+  }
+
+  h3 {
+    font-size: 18px;
+    padding-bottom: 24px;
+  }
 }
 .sb__footer-Links {
   display: flex;
   align-items: flex-start;
-  gap: 10rem;
   flex-wrap: wrap;
   width: 100%;
   text-align: left;
+  gap: 4rem;
   justify-content: center;
 }
-.sb__footer-Links_div_logo {
-  width: 150px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  color: white;
-}
 .sb__footer-Links_div{
-  width: 150px;
+  width: 200px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   color: white;
-  margin-top: 1.3rem;
-  margin-left: 1.5rem;
+  padding-top: 2rem;
+  
+}
+.sb__footer-Links_div_logo {
+  width: 270px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: white;
+  padding-right: 3rem;
+  padding-top: 1rem;
+}
+.sb__footer-Links_div_sm {
+  width: 250px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: white;
+  margin-top: 1.8rem;
+  margin-left: 1rem;
 }
 
 
@@ -73,7 +141,6 @@
 .sb__footer-below {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   margin-top: 0.2rem
 }
 .sb__footer-below-links {
@@ -95,6 +162,13 @@ hr {
   line-height: 15px;
   color: rgb(255, 255, 255);
 }
+
+.socialmedia_logo_container:hover {
+  background-color: rgb(81, 66, 252);
+  transition: background .5s;
+  cursor: pointer;
+}
+
 
 @media screen and (max-width: 850px) {
   .sb__footer-heading h1 {

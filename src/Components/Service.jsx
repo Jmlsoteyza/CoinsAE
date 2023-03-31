@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import ServiceCircle from "../images/Service circle.png";
 import ServiceImage from "../images/Service Image.png";
 import SecureLogo from "../images/secure-storage.svg";
@@ -7,9 +7,27 @@ import ProtectedLogo from "../images/service-protected.svg";
 import MoneyLogo from "../images/service-money.svg";
 
 const Service = () => {
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
+
+
   return (
     <>
     <section className="service-container"> 
+    {isLoading ? (
+
+      <div className="cssload-container">
+      <div className="cssload-loader">
+      <div className="cssload-inner cssload-one"></div>
+      <div className="cssload-inner cssload-two"></div>
+      <div className="cssload-inner cssload-three"></div>
+    </div>
+    </div>
+    ) : (   
       <section id="Service" className="Service-container">
         <div className="service-text">
           <h1>Our service for you</h1>
@@ -28,6 +46,7 @@ const Service = () => {
             />
           </div>
           <div className="service-description_container">
+          <div className="service-description_position">
             <div className="service-description_innercontainer">
               <div className="service-circle-style">
                 <img src={SecureLogo} className="logothis" alt="service" />
@@ -53,7 +72,9 @@ const Service = () => {
                   enjoy competitive rates for your trades.
                 </p>
               </div>
+              </div>
             </div>
+            <div className="service-description_position">
             <div className="service-description_innercontainer">
               <div className="service-circle-style">
                 <img src={ProtectedLogo} className="logothis" alt="service" />
@@ -79,9 +100,11 @@ const Service = () => {
                 </p>
               </div>
             </div>
+            </div>
           </div>
         </div>
       </section>
+      )}
       </section>
     </>
   );

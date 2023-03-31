@@ -1,10 +1,19 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Bitcoin from "../images/bitcoin.png";
 import Ethereum from "../images/ethereum.png";
 import { Link } from "react-router-dom";
 import bgColor from '../images/bg-gradient.png'
 
 const Hero = (props) => {
+  const [loading, setLoading] = useState(true)
+  
+  useEffect(() => {
+   
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+  }, [])
+
   if (!props.coins || props.coins.length === 0) {
     return null;
   }
@@ -12,6 +21,15 @@ const Hero = (props) => {
 
   return (
     <section id="Home" className="hero-section">
+    {loading ? (
+      <div className="cssload-container">
+      <div className="cssload-loader">
+      <div className="cssload-inner cssload-one"></div>
+      <div className="cssload-inner cssload-two"></div>
+      <div className="cssload-inner cssload-three"></div>
+    </div>
+    </div>
+    ) : (   
       <div className="hero-container">
         <div className="heroTextAndImage">
           <img className="bitcoin-img" src={Bitcoin} alt="btc"></img>
@@ -102,9 +120,11 @@ const Hero = (props) => {
           </div>
         </div>
       </div>
+      )}
       <div className="bg-gradient">
       <img src={bgColor} alt="background" />
       </div>
+      
     </section>
   );
 };

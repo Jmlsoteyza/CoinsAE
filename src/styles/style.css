@@ -30,6 +30,96 @@ a {
   text-decoration: none;
 }
 
+.cssload-loader {
+  position: relative;
+  left: calc(50% - 76px);
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  perspective: 1900px;
+}
+
+.cssload-container {
+  padding-top: 7rem;
+}
+
+.cssload-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.cssload-inner.cssload-one {
+  left: 0%;
+  top: 0%;
+  animation: cssload-rotate-one 0.95s linear infinite;
+  -o-animation: cssload-rotate-one 0.95s linear infinite;
+  -ms-animation: cssload-rotate-one 0.95s linear infinite;
+  -webkit-animation: cssload-rotate-one 0.95s linear infinite;
+  -moz-animation: cssload-rotate-one 0.95s linear infinite;
+  border-bottom: 7px solid rgb(163, 60, 163);
+}
+
+.cssload-inner.cssload-two {
+  right: 0%;
+  top: 0%;
+  animation: cssload-rotate-two 0.95s linear infinite;
+  -o-animation: cssload-rotate-two 0.95s linear infinite;
+  -ms-animation: cssload-rotate-two 0.95s linear infinite;
+  -webkit-animation: cssload-rotate-two 0.95s linear infinite;
+  -moz-animation: cssload-rotate-two 0.95s linear infinite;
+  border-right: 7px solid rgba(171, 36, 31, 0.98);
+}
+
+.cssload-inner.cssload-three {
+  right: 0%;
+  bottom: 0%;
+  animation: cssload-rotate-three 0.95s linear infinite;
+  -o-animation: cssload-rotate-three 0.95s linear infinite;
+  -ms-animation: cssload-rotate-three 0.95s linear infinite;
+  -webkit-animation: cssload-rotate-three 0.95s linear infinite;
+  -moz-animation: cssload-rotate-three 0.95s linear infinite;
+  border-top: 7px solid rgb(39, 94, 176);
+}
+
+@keyframes cssload-rotate-one {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+@keyframes cssload-rotate-two {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+@keyframes cssload-rotate-three {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
 .navbar {
   font-family: "Space Grotesk", sans-serif;
   display: flex;
@@ -116,6 +206,96 @@ a {
   text-decoration: none;
 }
 
+.cssload-loader {
+  position: relative;
+  left: calc(50% - 76px);
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  perspective: 1900px;
+}
+
+.cssload-container {
+  padding-top: 7rem;
+}
+
+.cssload-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.cssload-inner.cssload-one {
+  left: 0%;
+  top: 0%;
+  animation: cssload-rotate-one 0.95s linear infinite;
+  -o-animation: cssload-rotate-one 0.95s linear infinite;
+  -ms-animation: cssload-rotate-one 0.95s linear infinite;
+  -webkit-animation: cssload-rotate-one 0.95s linear infinite;
+  -moz-animation: cssload-rotate-one 0.95s linear infinite;
+  border-bottom: 7px solid rgb(163, 60, 163);
+}
+
+.cssload-inner.cssload-two {
+  right: 0%;
+  top: 0%;
+  animation: cssload-rotate-two 0.95s linear infinite;
+  -o-animation: cssload-rotate-two 0.95s linear infinite;
+  -ms-animation: cssload-rotate-two 0.95s linear infinite;
+  -webkit-animation: cssload-rotate-two 0.95s linear infinite;
+  -moz-animation: cssload-rotate-two 0.95s linear infinite;
+  border-right: 7px solid rgba(171, 36, 31, 0.98);
+}
+
+.cssload-inner.cssload-three {
+  right: 0%;
+  bottom: 0%;
+  animation: cssload-rotate-three 0.95s linear infinite;
+  -o-animation: cssload-rotate-three 0.95s linear infinite;
+  -ms-animation: cssload-rotate-three 0.95s linear infinite;
+  -webkit-animation: cssload-rotate-three 0.95s linear infinite;
+  -moz-animation: cssload-rotate-three 0.95s linear infinite;
+  border-top: 7px solid rgb(39, 94, 176);
+}
+
+@keyframes cssload-rotate-one {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+@keyframes cssload-rotate-two {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+@keyframes cssload-rotate-three {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
 .hero-section {
   width: 100%;
   text-align: center;
@@ -217,6 +397,22 @@ a {
   transition: all 0.3s;
 }
 
+@media (max-width: 1150px) {
+  .ethereum-img {
+    transform: translate(35rem, -29.5rem);
+  }
+}
+@media (max-width: 900px) {
+  .ethereum-img, .bitcoin-img {
+    display: none;
+  }
+  .hero-section {
+    padding-top: 5rem;
+  }
+  .coins-chart-container {
+    margin-top: 5rem;
+  }
+}
 .market-container {
   background-color: #14141f;
   padding-bottom: 15rem;
@@ -248,7 +444,8 @@ a {
   display: flex;
   flex-direction: column;
   height: auto;
-  overflow: auto;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .market-icon_img:hover {
@@ -296,7 +493,6 @@ a {
 .Market-names {
   grid-gap: 2rem;
   align-items: center;
-  /* From https://css.glass */
   background: rgba(255, 255, 255, 0.11);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.5px);
@@ -409,6 +605,33 @@ a {
   color: #fff;
 }
 
+@media (max-width: 900px) {
+  .Market-names {
+    width: 900px;
+    overflow-x: auto;
+  }
+  .coin-row {
+    overflow-x: auto;
+    width: 900px;
+    text-align: right;
+  }
+  .Market-names_container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  .Market-names_container p {
+    font-size: 14px;
+  }
+  .Market-names_container .Market-names {
+    box-shadow: none;
+  }
+}
 .Market-chart {
   width: 100%;
   max-width: 120rem;
@@ -633,6 +856,55 @@ a {
     transform: rotate(360deg);
   }
 }
+@media (min-width: 1151px) and (max-width: 1480px) {
+  .service-images {
+    position: relative;
+  }
+  .service-images .coin-img {
+    position: static;
+  }
+  .service-images .img-circle {
+    left: 0;
+    top: 0;
+  }
+  .img-circle {
+    margin: 3rem;
+  }
+}
+@media (max-width: 1150px) {
+  .service-images {
+    width: 550px;
+  }
+  .service-images .img-circle {
+    width: 500px;
+    left: 4%;
+  }
+}
+@media (max-width: 1050px) {
+  .service-images_description {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-images {
+    position: relative;
+  }
+  .service-images .img-circle {
+    bottom: 0;
+    right: 0;
+    margin-top: 3rem;
+  }
+  .service-description_position {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom: 3rem;
+  }
+  .service-circle-style {
+    max-width: 100px;
+    min-width: 100px;
+  }
+}
 .Contact-Us {
   display: flex;
   flex-direction: row;
@@ -816,50 +1088,113 @@ form textarea {
 
 .footer {
   background-color: #030303;
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 .logoHeader_footer {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  padding-bottom: 3rem;
 }
 
 .logoHeader_footer .logo {
   width: 3rem;
 }
 
+.sb__footer-Links_form {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  position: relative;
+}
+.sb__footer-Links_form input {
+  border-radius: 10px;
+  background: #F8F8F8;
+  width: 100%;
+  padding: 15px 10px 15px 22px;
+  font-size: 14px;
+  border: 1px solid rgba(138, 138, 160, 0.3);
+  background-color: transparent;
+  color: white;
+}
+.sb__footer-Links_form button {
+  background-color: #5142fc;
+  outline: none;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1.3rem 1.5rem;
+}
+.sb__footer-Links_form .sendLogo {
+  align-items: center;
+  text-align: center;
+  width: 18px;
+  height: 18px;
+}
+
 .sb__footer {
   display: flex;
   flex-direction: column;
+}
+.sb__footer p {
+  font-size: 14px;
+  padding-bottom: 14px;
+}
+.sb__footer h3 {
+  font-size: 18px;
+  padding-bottom: 24px;
 }
 
 .sb__footer-Links {
   display: flex;
   align-items: flex-start;
-  gap: 10rem;
   flex-wrap: wrap;
   width: 100%;
   text-align: left;
+  gap: 4rem;
   justify-content: center;
 }
 
-.sb__footer-Links_div_logo {
-  width: 150px;
+.sb__footer-Links_div {
+  width: 200px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   color: white;
+  padding-top: 2rem;
 }
 
-.sb__footer-Links_div {
-  width: 150px;
+.sb__footer-Links_div_logo {
+  width: 270px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   color: white;
-  margin-top: 1.3rem;
-  margin-left: 1.5rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+}
+
+.sb__footer-Links_div_sm {
+  width: 250px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: white;
+  margin-top: 1.8rem;
+  margin-left: 1rem;
 }
 
 .socialmedia {
@@ -887,7 +1222,6 @@ form textarea {
 .sb__footer-below {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   margin-top: 0.2rem;
 }
 
@@ -911,6 +1245,12 @@ hr {
   font-size: 13px;
   line-height: 15px;
   color: rgb(255, 255, 255);
+}
+
+.socialmedia_logo_container:hover {
+  background-color: rgb(81, 66, 252);
+  transition: background 0.5s;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 850px) {
