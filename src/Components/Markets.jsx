@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import MarketItem from "./MarketItem";
+import searchIcon from '../images/svgviewer 1.svg'
 
 const Markets = (props) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -55,12 +56,16 @@ const Markets = (props) => {
     <section id="Market" className="Market-container">
       <div className="search-text">
         <h2>Market Overview</h2>
+        <div className="market-icon_img">
+        <img className="searchIcon" src={searchIcon} />
         <input
+          className="search_bar"
           type="text"
-          placeholder="Search here"
+          placeholder="Search Coin Name"
           onChange={handleChange}
           value={searchInput}
         />
+        </div>
       </div>
       <div className="Market-names_container">
         <div className="Market-names">

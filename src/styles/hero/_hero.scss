@@ -50,6 +50,7 @@
   gap: 4rem;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   p {
     color: white;
@@ -59,6 +60,7 @@
   .coins-chart-text_displayBlock {
     display: flex;
     gap: 1rem;
+    
   }
 
   img {

@@ -1,45 +1,13 @@
-import axios from "axios";
-import React, { useState, useEffect } from "react";
 import callIcon from "../images/call-icon.svg";
 import atIcon from "../images/at-icon.svg";
 import locationIcon from "../images/location-icon.svg";
+import twitterLogo from "../images/twitterLogo.svg";
+import githubLogo from "../images/githubLogo.svg"
+import linkedin from "../images/linkedinLogo.svg"
 
 const CryptoNews = () => {
-  const [news, setNews] = useState([]);
-
-  useEffect(() => {
-    const options = {
-      method: "GET",
-      url: "https://crypto-news11.p.rapidapi.com/cryptonews/bitcoin",
-      params: { max_articles: "10", last_n_hours: "48", top_n_keywords: "10" },
-      headers: {
-        "X-RapidAPI-Key": "dcb55dc893msh07c19a4b970bfb5p1df0bfjsn6f630f2c29ff",
-        "X-RapidAPI-Host": "crypto-news11.p.rapidapi.com",
-      },
-    };
-
-    axios
-      .get(options.url, { headers: options.headers })
-      .then(function (response) {
-        setNews(response.data);
-      })
-      .catch(function (error) {});
-  }, []);
-
   return (
     <section id="Contact" className="Contact-Us">
-      <section className="cryptoNews">
-        <h2>Latest crypto news</h2>
-        <ul>
-          {Array.isArray(news.articles) &&
-            news.articles.slice(0, 5).map((item, index) => (
-              <li key={index}>
-                <a href={item.url}>{item.title}</a>
-              </li>
-            ))}
-        </ul>
-      </section>
-
       <section className="contact-us_container">
         <div className="contact-us_header">
           <h1>Contact us now!</h1>
@@ -49,30 +17,38 @@ const CryptoNews = () => {
           <div className="contact-us_row">
             <div className="contact-us_row_container">
               <div className="contact-us_row_box">
-                <span className="contact-us_row_circle">
-                  <img src={callIcon} alt="callIcon" />
-                </span>
                 <div className="contact-us_row_text">
-                  <h2>Contact phone</h2>
-                  <p>0543196753</p>
-                </div>
-              </div>
-              <div className="contact-us_row_box">
-                <span className="contact-us_row_circle">
-                  <img src={atIcon} alt="atIcon" />
-                </span>
-                <div className="contact-us_row_text">
-                  <h2>Email</h2>
-                  <p>jmlsoteyza.dev@gmail.com</p>
-                </div>
-              </div>
-              <div className="contact-us_row_box">
-                <span className="contact-us_row_circle">
-                  <img src={locationIcon} alt="locationIcon" />
-                </span>
-                <div className="contact-us_row_text">
-                  <h2>Location</h2>
-                  <p>Bur dubai, dubai</p>
+                  <h2>Request a contact us</h2>
+                  <p>
+                    Revail The universal acceptance of building has given a
+                    tremendous opportunity for merchants to do crossborder
+                    transactions instantly and at reduced cost.
+                  </p>
+                  <div className="contact-us_adress_container">
+                    <div className="contact-us_andress">
+                    <img src={callIcon}/>
+                      <p>+54 3196 753</p>
+                    </div>
+                    <div className="contact-us_andress">
+                    <img src={atIcon} />
+                      <p>jmlsoteyza.dev@gmail.com</p>
+                    </div>
+                    <div className="contact-us_andress">
+                    <img src={locationIcon}/>
+                      <p>Bur dubai, dubai</p>
+                    </div>
+                  </div>
+                  <div className="socialmedia_logo">
+                  <div className="socialmedia_logo_container">
+                  <img src={twitterLogo} />
+                  </div>
+                  <div className="socialmedia_logo_container">
+                  <img src={githubLogo}/>
+                  </div>
+                  <div className="socialmedia_logo_container">
+                  <img src={linkedin}/>
+                  </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -87,7 +63,13 @@ const CryptoNews = () => {
                   placeholder="Email"
                   defaultValue=" "
                 />
-              </div>
+                </div>
+                <input
+                  className="form-inputs"
+                  type="text"
+                  placeholder="Subject"
+                  defaultValue="Subject "
+                />
               <textarea
                 name="message"
                 id=""
@@ -96,7 +78,7 @@ const CryptoNews = () => {
                 placeholder="Your Message"
                 defaultValue="Your Message "
               ></textarea>
-              <input type="Submit" defaultValue="send"  />
+              <input type="Submit" defaultValue="send" />
             </form>
           </div>
         </div>

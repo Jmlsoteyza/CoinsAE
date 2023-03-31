@@ -22,6 +22,16 @@
       text-decoration: none;
     }
   }
+  .logoHeader {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    .logo {
+      width: 3rem;
+
+    }
+  }
   
   .ul-container {
     display: flex;

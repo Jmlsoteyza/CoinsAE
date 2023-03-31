@@ -52,6 +52,15 @@ a {
   text-decoration: none;
 }
 
+.logoHeader {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.logoHeader .logo {
+  width: 3rem;
+}
+
 .ul-container {
   display: flex;
   gap: 4rem;
@@ -157,6 +166,7 @@ a {
   gap: 4rem;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .coins-chart-container p {
   color: white;
@@ -241,10 +251,59 @@ a {
   overflow: auto;
 }
 
+.market-icon_img:hover {
+  border: 1px solid #5142fc;
+}
+
+.market-icon_img:focus {
+  border: 1px solid #5142fc;
+}
+
+.market-icon_img {
+  display: flex;
+  align-items: center;
+  border: 1px solid #474d57;
+  height: 40px;
+  width: 100px;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #5e6673;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+.market-icon_img .searchIcon {
+  width: 20px;
+  height: 20px;
+}
+.market-icon_img .search_bar {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  opacity: 1;
+  font-size: 14px;
+  color: white;
+  padding-left: 10px;
+}
+
 .Market-names {
   grid-gap: 2rem;
   align-items: center;
-  border-bottom: 1px solid #474d57;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.11);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-top: 1rem;
   color: #fff;
   display: grid;
   font-size: 2.2rem;
@@ -252,7 +311,7 @@ a {
   gap: 2rem;
   grid-template-columns: 26fr 26fr 26fr 26fr 26fr;
   height: auto;
-  padding: 2.5rem 1.5rem;
+  padding: 1.8rem 1.5rem;
   text-align: right;
   width: 100%;
 }
@@ -298,8 +357,17 @@ a {
   align-items: center;
 }
 
+.coin-row:hover {
+  background-color: rgb(15, 17, 26);
+}
+
+.search-text {
+  display: flex;
+  align-items: center;
+}
 .search-text h2 {
   font-size: 4.5rem;
+  flex: 1;
 }
 
 .paginationButtons {
@@ -582,7 +650,6 @@ a {
 
 .contact-us_container {
   height: auto;
-  margin-left: 12rem;
 }
 .contact-us_container h1 {
   padding-bottom: 2rem;
@@ -595,41 +662,68 @@ a {
   text-align: center;
 }
 
-.contact-us_row_container {
-  margin-top: 5rem;
-  max-width: 27rem;
+.contact-us_row_box {
+  padding: 20px 40px;
+  width: 100%;
+  min-width: 100%;
 }
 
-.contact-us_row_box {
+.contact-us_row_container {
+  max-width: 650px;
+  background-color: #1c1f26;
+  border-radius: 10px;
+  margin-top: 4.7rem;
+}
+.contact-us_row_container p {
+  line-height: 1.6;
+  padding-top: 1.5rem;
+}
+
+.contact-us_andress {
   display: flex;
   gap: 2rem;
   align-items: center;
   margin: 0;
-  padding: 2rem 1rem;
-  margin-bottom: 3rem;
-  flex-shrink: unset;
-  border: 1px solid transparent;
-  -o-border-image: linear-gradient(to right, rgb(115, 17, 161), rgb(19, 132, 195)) 1;
-     border-image: linear-gradient(to right, rgb(115, 17, 161), rgb(19, 132, 195)) 1;
+  padding: 0;
 }
-.contact-us_row_box h2 {
-  font-size: 16px;
+.contact-us_andress img {
+  width: 2rem;
+  align-self: center;
+}
+.contact-us_andress p {
+  padding: 0;
+  margin: 0;
 }
 
-.contact-us_row_circle {
+.contact-us_adress_container {
   display: flex;
-  border-radius: 50%;
-  background-color: #2A3039;
-  text-align: center;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.socialmedia_logo {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.socialmedia_logo img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.socialmedia_logo_container {
+  background-color: #111213;
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 1.2rem;
+  border-radius: 5px;
 }
 
 .contact-us_form-flex {
   display: flex;
-  gap: 5rem;
+  gap: 7.5rem;
   width: 100%;
 }
 
@@ -725,6 +819,16 @@ form textarea {
   padding: 8rem 0;
 }
 
+.logoHeader_footer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logoHeader_footer .logo {
+  width: 3rem;
+}
+
 .sb__footer {
   display: flex;
   flex-direction: column;
@@ -732,21 +836,30 @@ form textarea {
 
 .sb__footer-Links {
   display: flex;
-  justify-content: center;
   align-items: flex-start;
+  gap: 10rem;
   flex-wrap: wrap;
   width: 100%;
   text-align: left;
-  margin-bottom: 2rem;
+  justify-content: center;
 }
 
-.sb__footer-Links_div {
+.sb__footer-Links_div_logo {
   width: 150px;
-  margin: 1rem;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   color: white;
+}
+
+.sb__footer-Links_div {
+  width: 150px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: white;
+  margin-top: 1.3rem;
+  margin-left: 1.5rem;
 }
 
 .socialmedia {
@@ -765,7 +878,7 @@ form textarea {
 }
 
 .sb__footer-Links_div p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 15px;
   margin: 0.5rem 0;
   cursor: pointer;

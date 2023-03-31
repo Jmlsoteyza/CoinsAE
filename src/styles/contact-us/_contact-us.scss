@@ -14,7 +14,7 @@
   }
   .contact-us_container {
     height: auto;
-    margin-left: 12rem;
+    // margin-left: 12rem;
   
     h1 {
       padding-bottom: 2rem;
@@ -28,42 +28,69 @@
           text-align: center;
       }
   }
-  .contact-us_row_container {
-    margin-top: 5rem;
-    max-width: 27rem;
-  }
-  
   .contact-us_row_box {
+    padding: 20px 40px;
+    width: 100%;
+    min-width: 100%;
+  }
+  .contact-us_row_container {
+    max-width: 650px;
+    background-color: #1c1f26;
+    border-radius: 10px;
+    margin-top: 4.7rem;
+
+
+    p {
+        line-height: 1.6;
+        padding-top: 1.5rem;
+    }
+  }
+  .contact-us_andress {
     display: flex;
     gap: 2rem;
     align-items: center;
     margin: 0;
-    padding: 2rem 1rem;
-    margin-bottom: 3rem;
-    flex-shrink: unset;
-    border: 1px solid transparent;
-    border-image: linear-gradient(to right, rgb(115, 17, 161), rgb(19, 132, 195))
-      1;
-  
-    h2 {
-      font-size: 16px;
+    padding: 0;
+    img {
+        width: 2rem;
+        align-self: center;
+    }
+    p {
+        padding: 0;
+        margin: 0;
     }
   }
-  
-  .contact-us_row_circle {
+  .contact-us_adress_container {
     display: flex;
-    border-radius: 50%;
-    background-color: #2A3039;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    margin-top: 1rem;
+}
+  .socialmedia_logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 3rem;
+      img {
+
+          width: 2rem;
+          height: 2rem;
+      }
   }
+  .socialmedia_logo_container {
+    background-color: #111213;
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 1.2rem;
+    border-radius: 5px;
+  }
+ 
+  
+  
   
   .contact-us_form-flex {
     display: flex;
-    gap: 5rem;
+    gap: 7.5rem;
     width: 100%;
   }
   

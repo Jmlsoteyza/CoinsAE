@@ -1,6 +1,7 @@
 import React from "react";
 import Darkmode from "../images/Moon.svg";
 import { Link as ScrollLink } from "react-scroll";
+import Logo from '../images/logo.svg'
 
 const Link = ({ to, onClick, children }) => {
   if (to.startsWith("#")) {
@@ -15,7 +16,10 @@ const Navbar = () => {
   return (
     <div className="stickyBar">
       <div className="navbar">
-        <h1>Coins.AE</h1>
+      <div className="logoHeader">
+      <img className="logo" src={Logo} />
+        <h1>CoinsAE</h1>
+        </div>
         <ul className="ul-container">
           <li>
             <Link spy={true} smooth={true} duration={500} to="#Home">
