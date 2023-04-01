@@ -30,7 +30,7 @@ const Service = () => {
     ) : (   
       <section id="Service" className="Service-container">
         <div className="service-text">
-          <h1>Our service for you</h1>
+          <h1>What We Offer!</h1>
         </div>
         <div className="service-images_description">
           <div className="service-images">

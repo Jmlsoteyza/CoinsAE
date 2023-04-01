@@ -55,12 +55,13 @@ const Markets = (props) => {
     <section className="market-container">
     <section id="Market" className="Market-container">
       <div className="search-text">
-        <h2>Market Overview</h2>
+        <h2><span className="market-heading_span">Market</span> Overview</h2>
         <div className="market-icon_img">
         <img className="searchIcon" src={searchIcon} />
         <input
           className="search_bar"
           type="text"
+          tabindex="1"
           placeholder="Search Coin Name"
           onChange={handleChange}
           value={searchInput}
