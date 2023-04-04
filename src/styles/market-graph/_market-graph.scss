@@ -27,7 +27,6 @@
   width: 100%;
   border-right: 1px solid #fff;
 }
-
 .coinLogo {
   width: 20rem;
   max-width: 100%;
@@ -36,7 +35,6 @@
 .coin-heading {
   text-align: center;
 }
-
 .coin-name-symbol {
   display: flex;
   gap: 1rem;
@@ -47,7 +45,7 @@
     font-size: 4.2rem;
   }
   .coin-symbol {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
   }
 }
 .coin-price {
@@ -67,7 +65,6 @@
 .description-text_innercontainer {
   padding: 0.3rem 2.5rem;
 }
-
 .content {
   h3 {
     font-size: 2.7rem;
@@ -86,7 +83,6 @@
   top: -12%;
   left: 0;
 }
-
 .market-cap_text {
   display: flex;
   gap: 1rem;
@@ -152,7 +148,7 @@
   }
 }
 @media (max-width: 680px) {
-    .service-images .img-circle {
-        display: none;
-    }
+  .service-images .img-circle {
+    display: none;
+  }
 }

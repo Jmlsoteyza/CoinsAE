@@ -16,7 +16,7 @@ const Hero = (props) => {
   }
 
   return (
-    <section id="Home" className="hero-section">
+    <section id="Home" className="hero-section" style={{ paddingBottom: '16rem'}}>
       {loading ? (
         <div className="cssload-container">
           <div className="cssload-loader">

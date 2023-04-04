@@ -23,9 +23,12 @@ const ContactUs = () => {
                 <div className="contact-us_row_text">
                   <h2>Request a contact us</h2>
                   <p>
-                    Revail The universal acceptance of building has given a
-                    tremendous opportunity for merchants to do crossborder
-                    transactions instantly and at reduced cost.
+                    Our cryptocurrency, CryptoAE, features a sleek and visually
+                    appealing design that can enhance the aesthetics of your
+                    website. If you're interested in improving your website's
+                    look and feel, please get in touch with us using the contact
+                    information provided below. We'd be happy to help you create
+                    a website that is just as appealing as CryptoAE.
                   </p>
                   <div className="contact-us_adress_container">
                     <div className="contact-us_andress">
@@ -73,10 +76,20 @@ const ContactUs = () => {
                       <img src={twitterLogo} alt="twitterLogo" />
                     </div>
                     <div className="socialmedia_logo_container">
-                      <img src={githubLogo} alt="githubLogo" />
+                      <a
+                        href="https://github.com/Jmlsoteyza?tab=repositories"
+                        style={{ fontSize: 0, lineHeight: 0 }}
+                      >
+                        <img src={githubLogo} alt="githubLogo" />
+                      </a>
                     </div>
                     <div className="socialmedia_logo_container">
-                      <img src={linkedin} alt="linkedin" />
+                      <a
+                        href="https://www.linkedin.com/in/jom-luis-oteyza/"
+                        style={{ fontSize: 0, lineHeight: 0 }}
+                      >
+                        <img src={linkedin} alt="linkedin" />
+                      </a>
                     </div>
                   </div>
                 </div>

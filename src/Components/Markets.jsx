@@ -59,7 +59,7 @@ const Markets = (props) => {
             <span className="market-heading_span">Market</span> Overview
           </h2>
           <div className="market-icon_img">
-            <img className="searchIcon" src={searchIcon} />
+            <img className="searchIcon" src={searchIcon} alt={searchIcon} />
             <input
               className="search_bar"
               type="text"

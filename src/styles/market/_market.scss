@@ -192,11 +192,9 @@
     font-size: 1.5rem;
   }
 }
-
 .paginationButtons button:hover {
   background-color: #f8f8f81f;
 }
-
 .paginationButtons button.active {
   background-color: #f8f8f81f;
   color: #fff;
@@ -260,7 +258,6 @@
   }
  }
  .service-description_container {padding-inline: 1rem;}
- 
 }
 @media (max-width: 650px) {
   .coins-chart {

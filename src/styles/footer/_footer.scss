@@ -1,7 +1,6 @@
 .section__padding {
   padding: 5.5rem 1.5rem;
 }
-
 .footer {
   background-color: #030303;
   padding: 4rem 0;
@@ -68,7 +67,6 @@
     height: 1.8rem;
   }
 }
-
 .sb__footer {
   display: flex;
   flex-direction: column;
@@ -92,17 +90,14 @@
   column-gap: 4rem;
   justify-content: center;
 }
-
 .sb__footer-Links p {
   position: relative;
   width: fit-content;
 }
-
 .sb__footer-Links p:hover {
   color: #5142fc;
   transition: all 0.3s ease-out;
 }
-
 .sb__footer-Links p::after {
   content: "";
   position: absolute;

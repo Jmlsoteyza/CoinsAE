@@ -35,7 +35,7 @@ const MarketGraph = () => {
 
   useEffect(() => {
     setLoading(false);
-  });
+  }, []);
 
   const texturl = `https://api.coingecko.com/api/v3/coins/${params.coinId}`;
 
@@ -47,7 +47,7 @@ const MarketGraph = () => {
         setLoading(false);
       })
       .catch((error) => {});
-  }, []);
+  }, [texturl]);
   const { coinId } = useParams();
   const [dataAPI, setDataAPI] = useState(null);
   const url = `https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=usd&days=365`;

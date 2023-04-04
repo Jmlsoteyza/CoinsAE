@@ -45,8 +45,8 @@ const Navbar = () => {
     <div className={stickyBarClass}>
       <div className="navbar">
         <div className="logoHeader">
-          <img className="logo darkLogo" src={Logo} />
-          <img className="logo lightLogo" src={Logo1} />
+          <img className="logo darkLogo" src={Logo} alt={Logo}/>
+          <img className="logo lightLogo" src={Logo1} alt={Logo1}/>
           <h1>CoinsAE</h1>
         </div>
         <ul className={click ? "ul-container active" : "ul-container"}>

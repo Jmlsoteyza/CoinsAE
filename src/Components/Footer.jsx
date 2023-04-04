@@ -23,15 +23,15 @@ const Footer = () => {
           <div className="sb__footer-Links_div">
             <h3>For Business</h3>
             <p>Authors</p>
-            <p>Collection</p>
-            <p>Author Profile</p>
-            <p>Create Item</p>
+            <p>Advertise</p>
+            <p>Partnership</p>
+            <p>Investors</p>
           </div>
           <div className="sb__footer-Links_div">
             <h3>Resources</h3>
             <p>Help & Support</p>
-            <p>Live Auctions</p>
-            <p>Item Details</p>
+            <p>Glossary</p>
+            <p>Guides</p>
             <p>Activity</p>
           </div>
           <div className="sb__footer-Links_div">
@@ -51,18 +51,28 @@ const Footer = () => {
                 defaultValue=" "
               />
               <button type="submit">
-                <img className="sendLogo" src={sendLogo} />
+                <img className="sendLogo" src={sendLogo} alt="sendLogo"/>
               </button>
             </div>
             <div className="socialmedia_logo">
               <div className="socialmedia_logo_container">
-                <img src={twitterLogo} />
+                <img src={twitterLogo} alt="twitterLogo"/>
               </div>
               <div className="socialmedia_logo_container">
-                <img src={githubLogo} />
+                <a
+                  href="https://github.com/Jmlsoteyza?tab=repositories"
+                  style={{ fontSize: 0, lineHeight: 0 }}
+                >
+                  <img src={githubLogo} alt="githubLogo" />
+                </a>
               </div>
               <div className="socialmedia_logo_container">
-                <img src={linkedin} />
+                <a
+                  href="https://www.linkedin.com/in/jom-luis-oteyza/"
+                  style={{ fontSize: 0, lineHeight: 0 }}
+                >
+                  <img src={linkedin} alt="linkedin" />
+                </a>
               </div>
             </div>
           </div>
