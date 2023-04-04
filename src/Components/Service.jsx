@@ -25,7 +25,7 @@ const Service = () => {
             </div>
           </div>
         ) : (
-          <section  className="Service-container">
+          <section className="Service-container">
             <div className="service-text">
               <h1>What We Offer!</h1>
             </div>

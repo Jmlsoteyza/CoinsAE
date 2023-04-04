@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="sb__footer-Links">
           <div className="sb__footer-Links_div_logo">
             <div className="logoHeader_footer">
-              <img className="logo" src={Logo} />
+              <img className="logo" src={Logo} alt="Logo"/>
               <h1>CoinsAE</h1>
             </div>
             <p>
