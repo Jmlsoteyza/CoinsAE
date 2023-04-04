@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+
 .market-container {
   background-color: #14141f;
-  padding-bottom: 15rem;
+  padding-bottom: 10rem;
   color: #fff;
+  padding-top: 9rem;
 }
 .Market-container {
   display: flex;
@@ -12,16 +15,16 @@
   width: 100%;
 
   p {
-    font-size: 22px;
+    font-size: 2.2rem;
     margin: 0;
     padding: 0;
   }
 }
 .green-text {
-  color: #0ecb81;
+  color: #0ecb81 !important;
 }
 .red-text {
-  color: #f6465d;
+  color: #f6465d !important;
 }
 .Market-names_container {
   display: flex;
@@ -65,7 +68,7 @@
     border: none;
     background-color: inherit;
     opacity: 1;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: white;
     padding-left: 10px;
   }
@@ -74,9 +77,17 @@
   grid-gap: 2rem;
   align-items: center;
   // background: linear-gradient(3deg,#1384C3,#7311A1);
-  background: #5C258D;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #1384C3, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #106ea1, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #5c258d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1384c3,
+    #5c258d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #106ea1,
+    #5c258d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 8px 8px 0 0;
   // background: rgba(255, 255, 255, 0.11);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.301);
@@ -103,12 +114,12 @@ background: linear-gradient(to right, #106ea1, #5C258D); /* W3C, IE 10+/ Edge, F
   grid-gap: 2rem;
   align-items: center;
   border-bottom: 1px solid #474d57;
-  color: #fff;
+  color: #eaecef;
   display: grid;
   font-size: 2.2rem;
-  font-weight: 500;
+  font-weight: 400;
   gap: 3rem;
-  grid-template-columns: 26fr 26fr 26fr 26fr 26fr;
+  grid-template-columns: repeat(5, minmax(0, 250px));
   max-height: 101px;
   padding: 2.5rem 1.5rem;
   text-align: right;
@@ -116,7 +127,8 @@ background: linear-gradient(to right, #106ea1, #5C258D); /* W3C, IE 10+/ Edge, F
   user-select: none;
   width: 100%;
   background-color: transparent;
-  
+  word-wrap: break-word;
+  word-break: break-all;
 
   p {
     white-space: nowrap;
@@ -138,7 +150,7 @@ background: linear-gradient(to right, #106ea1, #5C258D); /* W3C, IE 10+/ Edge, F
 }
 .coin-row:hover {
   background-color: rgb(15, 17, 26);
-  transition: all .3s ;
+  transition: all 0.3s;
 }
 .search-text {
   display: flex;
@@ -156,13 +168,12 @@ background: linear-gradient(to right, #106ea1, #5C258D); /* W3C, IE 10+/ Edge, F
   flex-wrap: wrap;
   width: 100%;
   gap: 0.5rem;
-  font-family: roboto monospace;
 
   button {
     border: none;
     color: #fff;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 400;
     padding: 8px 12px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -170,6 +181,7 @@ background: linear-gradient(to right, #106ea1, #5C258D); /* W3C, IE 10+/ Edge, F
     border: none;
     background-color: transparent;
     border-radius: 5px;
+    font-family: "IBM Plex Sans", sans-serif;
   }
 
   .previousbutton-style,
@@ -177,7 +189,7 @@ background: linear-gradient(to right, #106ea1, #5C258D); /* W3C, IE 10+/ Edge, F
     color: rgb(183, 189, 198);
     background-color: transparent;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 }
 
@@ -190,17 +202,16 @@ background: linear-gradient(to right, #106ea1, #5C258D); /* W3C, IE 10+/ Edge, F
   color: #fff;
 }
 @media (max-width: 900px) {
-    .Market-names {
-      width: 900px;
-      overflow-x: auto;
-    }
-    .coin-row {
-      overflow-x: auto;
-      width: 900px;
-      text-align: right;
-    }
-  .Market-names_container{
-    
+  .Market-names {
+    width: 900px;
+    overflow-x: auto;
+  }
+  .coin-row {
+    overflow-x: auto;
+    width: 900px;
+    text-align: right;
+  }
+  .Market-names_container {
     width: 100%;
     height: auto;
     flex-direction: column;
@@ -210,14 +221,49 @@ background: linear-gradient(to right, #106ea1, #5C258D); /* W3C, IE 10+/ Edge, F
     word-wrap: break-word;
     overflow-wrap: break-word;
 
-
     p {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
 
-    .Market-names  {
+    .Market-names {
       box-shadow: none;
     }
   }
-  
+}
+@media (max-width: 766px) {
+  .search-text {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline: 1rem;
+    gap: 1rem;
+
+    h2 {
+      font-size: 2.4rem;
+    }
+  }
+  .market-icon_img {
+    width: 100%;
+  }
+  .heroTextAndImage {
+    .nextgen-text {
+      font-size: 7rem;
+    }
+    .cryptomarket-text {
+      font-size: 7rem;
+    }
+  }
+
+ .service-text {
+
+  h1 {
+    font-size: 3.2rem;
+  }
+ }
+ .service-description_container {padding-inline: 1rem;}
+ 
+}
+@media (max-width: 650px) {
+  .coins-chart {
+    width: 27rem;
+  }
 }

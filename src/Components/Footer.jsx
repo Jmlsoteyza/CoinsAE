@@ -1,10 +1,9 @@
 import React from "react";
 import Logo from "../images/logo.svg";
-import twitterLogo from "../images/twitterLogo.svg"
-import githubLogo from "../images/githubLogo.svg"
-import linkedin from "../images/linkedinLogo.svg"
-import sendLogo from "../images/sendLogo.svg"
-
+import twitterLogo from "../images/twitterLogo.svg";
+import githubLogo from "../images/githubLogo.svg";
+import linkedin from "../images/linkedinLogo.svg";
+import sendLogo from "../images/sendLogo.svg";
 
 const Footer = () => {
   return (
@@ -17,7 +16,8 @@ const Footer = () => {
               <h1>CoinsAE</h1>
             </div>
             <p>
-            Lorem ipsum dolor sit amet,consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae
+              Lorem ipsum dolor sit amet,consectetur adipisicing elit. Quis non,
+              fugit totam vel laboriosam vitae
             </p>
           </div>
           <div className="sb__footer-Links_div">
@@ -44,13 +44,15 @@ const Footer = () => {
           <div className="sb__footer-Links_div_sm">
             <h3>Subscribe us!</h3>
             <div className="sb__footer-Links_form">
-            <input
-                  className="form-inputs"
-                  type="Email"
-                  placeholder="info@yourgmail.com"
-                  defaultValue=" "
-                />
-              <button><img className="sendLogo" src={sendLogo}/></button>
+              <input
+                className="form-inputs"
+                type="Email"
+                placeholder="info@yourgmail.com"
+                defaultValue=" "
+              />
+              <button type="submit">
+                <img className="sendLogo" src={sendLogo} />
+              </button>
             </div>
             <div className="socialmedia_logo">
               <div className="socialmedia_logo_container">
@@ -60,7 +62,7 @@ const Footer = () => {
                 <img src={githubLogo} />
               </div>
               <div className="socialmedia_logo_container">
-                <img src={linkedin}/>
+                <img src={linkedin} />
               </div>
             </div>
           </div>

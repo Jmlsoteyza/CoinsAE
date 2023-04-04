@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
 *,
 *::after,
 *::before {
@@ -15,7 +18,7 @@ html {
 
 body {
   position: relative;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #343444;
@@ -28,6 +31,239 @@ body {
 
 a {
   text-decoration: none;
+}
+
+#dark .form-container {
+  margin-top: 3rem;
+}
+
+#dark .contact-us_form-flex {
+  transition: all 0.5s;
+}
+
+#dark .lightLogo {
+  display: none;
+}
+
+#dark .Contact-Us .lightmode_icon {
+  display: none;
+}
+
+#dark .hero-section {
+  transition: all 0.5s;
+}
+
+#dark .market-container {
+  transition: all 0.5s;
+}
+
+#light .navbar_open {
+  position: relative;
+}
+
+#light .stickyBar {
+  position: absolute;
+  border-bottom: 1px solid rgba(235, 235, 235, 0.5);
+  background: linear-gradient(227.3deg, #8a208c 0%, #181c81 100.84%);
+  top: -80px;
+}
+
+#light .stickyBar.smoothNav {
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  background: linear-gradient(227.3deg, #8a208c 0%, #181b81 100.84%);
+  border: none;
+  transition: all 0.5s;
+  position: fixed;
+  top: 0;
+}
+#light .stickyBar.smoothNav li:hover {
+  color: #1f1f2c;
+  font-weight: 700;
+}
+
+#light .bg-gradient {
+  display: none;
+}
+
+#light .hero-section {
+  color: #ffffff;
+  transition: all 0.5s;
+  background-color: #1d788d;
+  background-image: linear-gradient(19deg, #1d788d 0%, #b721ff 100%);
+}
+#light .hero-section .crypto-text {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  color: none;
+  background-image: none;
+  background-color: none;
+  transition: all 0.5s;
+}
+#light .hero-section .coins-chart {
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+#light .hero-section .coins-chart .coins-chart-border {
+  border: 1px solid #5142fc;
+}
+#light .hero-section .coins-chart .coins-chart_rank {
+  background-color: #5142fc;
+  border: 14px solid #fff;
+  transition: all 0.5s;
+}
+#light .hero-section .coins-chart .coins-chart_rank p {
+  color: #fff;
+  font-weight: 600;
+}
+#light .hero-section .coins-chart p {
+  color: #1f1f2c;
+  font-weight: 600;
+}
+
+#light .market-container {
+  background-color: #fff !important;
+  transition: all 0.5s;
+  padding-top: 9rem;
+}
+#light .market-container .Market-names {
+  box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
+}
+#light .market-container .coin-row {
+  border-bottom: 1px solid #eaebed;
+}
+#light .market-container h2 {
+  color: #1f1f2c;
+}
+#light .market-container .white {
+  color: #1f1f2c;
+}
+#light .market-container .coin-row:hover {
+  background-color: #f1f1f1;
+}
+
+#light .darkLogo {
+  display: none;
+}
+
+#light .search_bar {
+  color: #1f1f2c;
+}
+
+#light .red-text {
+  color: #cf304a;
+}
+
+#light .green-text {
+  color: #03a66d;
+}
+
+#light .paginationButtons button {
+  color: rgb(71, 77, 87);
+}
+#light .paginationButtons button:hover {
+  background-color: rgb(234, 236, 239);
+}
+#light .paginationButtons button:focus {
+  outline: none;
+}
+
+#light .paginationButtons button.active {
+  background-color: rgb(234, 236, 239) !important;
+  color: rgb(0, 0, 0) !important;
+  font-weight: 400;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+#light .service-container {
+  background-color: #fff !important;
+  transition: all 0.5s;
+}
+#light .service-container h1 {
+  color: #1f1f2c;
+}
+#light .service-container p {
+  color: #6e6e6e;
+}
+#light .service-container .service-circle-style {
+  box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
+  background: #5c258d;
+  background: linear-gradient(to right, #106ea1, #5c258d);
+}
+
+#light .Contact-Us {
+  background-color: #fff !important;
+  transition: all 0.5s;
+}
+#light .Contact-Us h1 {
+  color: #1f1f2c;
+}
+#light .Contact-Us .contact-us_row_box {
+  background-color: #fff !important;
+  box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
+  color: #1f1f2c;
+  border-radius: 8px;
+}
+#light .Contact-Us .darkmode_icon {
+  display: none;
+}
+
+#light .form-container {
+  box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
+  padding: 0rem 2.5rem;
+  margin-top: 4.8rem;
+  border-radius: 10px;
+}
+#light .form-container input,
+#light .form-container textarea {
+  margin-bottom: 2.5rem;
+  background-color: transparent;
+  border: 1px solid rgba(138, 138, 160, 0.3);
+  color: #1f1f2c;
+}
+#light .form-container form {
+  margin: 0;
+  padding: 2.2rem 0;
+  padding-bottom: 0;
+}
+#light .form-container form h2 {
+  color: #1f1f2c;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#light .form-container form input[type=submit] {
+  background: #1f1f2c;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+#light .form-container form input[type=submit]:hover {
+  background: #5142fc;
+}
+
+#light .footer {
+  background-color: #f8f8f8;
+}
+#light .footer p,
+#light .footer h3,
+#light .footer h1 {
+  color: #1f1f2c;
+}
+#light .footer p:hover {
+  color: #5142fc;
+  transition: all 0.3s ease-out;
+}
+#light .footer .form-inputs {
+  color: #1f1f2c;
+}
+
+.Market-graph_loader {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30rem;
 }
 
 .cssload-loader {
@@ -120,6 +356,32 @@ a {
     transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
   }
 }
+body {
+  padding-top: 80px;
+}
+
+.navbar_open {
+  position: relative;
+}
+
+#dark .stickyBar.smoothNav {
+  top: 0;
+  position: fixed;
+  background-color: #14141f;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  transition: all 0.5s;
+}
+
+.stickyBar {
+  top: -80px;
+  position: absolute;
+  background-color: transparent;
+  background-color: #14141f;
+  border-bottom: 1px solid rgba(235, 235, 235, 0.2);
+  width: 100%;
+}
+
 .navbar {
   font-family: "Space Grotesk", sans-serif;
   display: flex;
@@ -147,6 +409,9 @@ a {
   align-items: center;
   gap: 1.5rem;
 }
+.logoHeader h1 {
+  color: #fff;
+}
 .logoHeader .logo {
   width: 3rem;
 }
@@ -156,10 +421,14 @@ a {
   gap: 4rem;
   list-style: none;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 .ul-container li {
   font-size: 20px;
   font-weight: 700;
+  text-decoration: none;
+  color: white;
 }
 .ul-container li:hover {
   background-image: linear-gradient(to right, rgb(115, 17, 161), rgb(19, 132, 195));
@@ -167,11 +436,20 @@ a {
   -webkit-background-clip: text;
   color: transparent;
   transition: all 0.3s;
+  text-decoration: none;
 }
 
 .navbar-moon-menubar {
   display: flex;
   gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-moon-menubar img {
+  max-width: 100%;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
 }
 
 .toggle {
@@ -186,6 +464,7 @@ a {
   align-items: center;
   cursor: pointer;
   overflow: hidden;
+  display: none;
 }
 .toggle span {
   position: absolute;
@@ -224,14 +503,10 @@ a {
   transform: translateX(30px);
 }
 
-.stickyBar {
-  background-color: transparent;
-  background-color: #14141f;
-  border-bottom: 1px solid rgba(235, 235, 235, 0.2);
-  width: 100%;
-}
-
 @media (max-width: 750px) {
+  .toggle {
+    display: flex;
+  }
   .logoHeader {
     z-index: 999;
   }
@@ -258,15 +533,6 @@ a {
   }
   .navbar {
     padding-inline: 2.5rem;
-    position: fixed;
-    background-color: #14141f;
-    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
-  }
-  .heroTextAndImage {
-    padding-top: 11.5rem;
-  }
-  body {
-    background-color: #fff;
   }
 }
 *,
@@ -284,7 +550,7 @@ html {
 
 body {
   position: relative;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #343444;
@@ -297,6 +563,267 @@ body {
 
 a {
   text-decoration: none;
+}
+
+#dark .form-container {
+  margin-top: 3rem;
+}
+
+#dark .contact-us_form-flex {
+  transition: all 0.5s;
+}
+
+#dark .lightLogo {
+  display: none;
+}
+
+#dark .Contact-Us .lightmode_icon {
+  display: none;
+}
+
+#dark .hero-section {
+  transition: all 0.5s;
+}
+
+#dark .market-container {
+  transition: all 0.5s;
+}
+
+#light .navbar_open {
+  position: relative;
+}
+
+#light .stickyBar {
+  position: absolute;
+  border-bottom: 1px solid rgba(235, 235, 235, 0.5);
+  background: linear-gradient(227.3deg, #8a208c 0%, #181c81 100.84%);
+  top: -80px;
+}
+
+#light .stickyBar.smoothNav {
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  background: linear-gradient(227.3deg, #8a208c 0%, #181b81 100.84%);
+  border: none;
+  transition: all 0.5s;
+  position: fixed;
+  top: 0;
+}
+
+#light .stickyBar.smoothNav li:hover {
+  color: #1f1f2c;
+  font-weight: 700;
+}
+
+#light .bg-gradient {
+  display: none;
+}
+
+#light .hero-section {
+  color: #ffffff;
+  transition: all 0.5s;
+  background-color: #1d788d;
+  background-image: linear-gradient(19deg, #1d788d 0%, #b721ff 100%);
+}
+
+#light .hero-section .crypto-text {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  color: none;
+  background-image: none;
+  background-color: none;
+  transition: all 0.5s;
+}
+
+#light .hero-section .coins-chart {
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+#light .hero-section .coins-chart .coins-chart-border {
+  border: 1px solid #5142fc;
+}
+
+#light .hero-section .coins-chart .coins-chart_rank {
+  background-color: #5142fc;
+  border: 14px solid #fff;
+  transition: all 0.5s;
+}
+
+#light .hero-section .coins-chart .coins-chart_rank p {
+  color: #fff;
+  font-weight: 600;
+}
+
+#light .hero-section .coins-chart p {
+  color: #1f1f2c;
+  font-weight: 600;
+}
+
+#light .market-container {
+  background-color: #fff !important;
+  transition: all 0.5s;
+  padding-top: 9rem;
+}
+
+#light .market-container .Market-names {
+  box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
+}
+
+#light .market-container .coin-row {
+  border-bottom: 1px solid #eaebed;
+}
+
+#light .market-container h2 {
+  color: #1f1f2c;
+}
+
+#light .market-container .white {
+  color: #1f1f2c;
+}
+
+#light .market-container .coin-row:hover {
+  background-color: #f1f1f1;
+}
+
+#light .darkLogo {
+  display: none;
+}
+
+#light .search_bar {
+  color: #1f1f2c;
+}
+
+#light .red-text {
+  color: #cf304a;
+}
+
+#light .green-text {
+  color: #03a66d;
+}
+
+#light .paginationButtons button {
+  color: rgb(71, 77, 87);
+}
+
+#light .paginationButtons button:hover {
+  background-color: rgb(234, 236, 239);
+}
+
+#light .paginationButtons button:focus {
+  outline: none;
+}
+
+#light .paginationButtons button.active {
+  background-color: rgb(234, 236, 239) !important;
+  color: rgb(0, 0, 0) !important;
+  font-weight: 400;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+#light .service-container {
+  background-color: #fff !important;
+  transition: all 0.5s;
+}
+
+#light .service-container h1 {
+  color: #1f1f2c;
+}
+
+#light .service-container p {
+  color: #6e6e6e;
+}
+
+#light .service-container .service-circle-style {
+  box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
+  background: #5c258d;
+  background: linear-gradient(to right, #106ea1, #5c258d);
+}
+
+#light .Contact-Us {
+  background-color: #fff !important;
+  transition: all 0.5s;
+}
+
+#light .Contact-Us h1 {
+  color: #1f1f2c;
+}
+
+#light .Contact-Us .contact-us_row_box {
+  background-color: #fff !important;
+  box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
+  color: #1f1f2c;
+  border-radius: 8px;
+}
+
+#light .Contact-Us .darkmode_icon {
+  display: none;
+}
+
+#light .form-container {
+  box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
+  padding: 0rem 2.5rem;
+  margin-top: 4.8rem;
+  border-radius: 10px;
+}
+
+#light .form-container input,
+#light .form-container textarea {
+  margin-bottom: 2.5rem;
+  background-color: transparent;
+  border: 1px solid rgba(138, 138, 160, 0.3);
+  color: #1f1f2c;
+}
+
+#light .form-container form {
+  margin: 0;
+  padding: 2.2rem 0;
+  padding-bottom: 0;
+}
+
+#light .form-container form h2 {
+  color: #1f1f2c;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#light .form-container form input[type=submit] {
+  background: #1f1f2c;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+#light .form-container form input[type=submit]:hover {
+  background: #5142fc;
+}
+
+#light .footer {
+  background-color: #f8f8f8;
+}
+
+#light .footer p,
+#light .footer h3,
+#light .footer h1 {
+  color: #1f1f2c;
+}
+
+#light .footer p:hover {
+  color: #5142fc;
+  transition: all 0.3s ease-out;
+}
+
+#light .footer .form-inputs {
+  color: #1f1f2c;
+}
+
+.Market-graph_loader {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30rem;
 }
 
 .cssload-loader {
@@ -393,7 +920,7 @@ a {
   width: 100%;
   text-align: center;
   background-color: #14141f;
-  padding-bottom: 18rem;
+  padding-bottom: 12rem;
 }
 .hero-section .heroTextAndImage {
   text-align: center;
@@ -401,6 +928,7 @@ a {
 .hero-section .nextgen-text {
   font-size: 10rem;
   font-weight: 700;
+  padding-top: 7rem;
 }
 .hero-section .cryptomarket-text {
   font-size: 10rem;
@@ -419,11 +947,18 @@ a {
 }
 
 .bitcoin-img {
-  transform: translate(-35rem, 5rem);
+  transform: translate(-30rem, 8rem);
+  animation-name: bitcoinmove;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .ethereum-img {
-  transform: translate(50rem, -10.5rem);
+  transform: translate(47.5rem, -12rem);
+  animation-name: ethereummove;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: -5s;
 }
 
 .crypto-text {
@@ -443,11 +978,12 @@ a {
 }
 .coins-chart-container p {
   color: white;
-  font-size: 20px;
+  font-size: 2rem;
 }
 .coins-chart-container .coins-chart-text_displayBlock {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 .coins-chart-container img {
   width: 90px;
@@ -459,6 +995,7 @@ a {
   position: relative;
   background-color: #131313;
   position: relative;
+  max-width: 30rem;
 }
 .coins-chart .coins-chart_rank {
   position: absolute;
@@ -473,7 +1010,9 @@ a {
   border: 14px solid #131313;
 }
 .coins-chart .coins-chart_rank p {
-  font-size: 25px;
+  font-family: "IBM Plex Sans";
+  font-weight: 400;
+  font-size: 2.5rem;
 }
 .coins-chart .coins-chart-border {
   border: 1px solid transparent;
@@ -490,13 +1029,44 @@ a {
   transition: all 0.3s;
 }
 
+@keyframes bitcoinmove {
+  0% {
+    transform: translate(-30rem, 8rem);
+  }
+  50% {
+    transform: translate(-30rem, 6rem);
+  }
+  100% {
+    transform: translate(-30rem, 8rem);
+  }
+}
+@keyframes ethereummove {
+  0% {
+    transform: translate(47.5rem, -12rem);
+  }
+  50% {
+    transform: translate(47.5rem, -10rem);
+  }
+  100% {
+    transform: translate(47.5rem, -12rem);
+  }
+}
 @media (max-width: 1150px) {
   .ethereum-img {
-    transform: translate(35rem, -29.5rem);
+    position: absolute;
+    left: 32%;
+    bottom: 29%;
+  }
+  .heroTextAndImage {
+    position: relative;
+  }
+  .coins-chart-container {
+    margin-top: 9rem;
   }
 }
 @media (max-width: 900px) {
-  .ethereum-img, .bitcoin-img {
+  .ethereum-img,
+  .bitcoin-img {
     display: none;
   }
   .hero-section {
@@ -508,8 +1078,9 @@ a {
 }
 .market-container {
   background-color: #14141f;
-  padding-bottom: 15rem;
+  padding-bottom: 10rem;
   color: #fff;
+  padding-top: 9rem;
 }
 
 .Market-container {
@@ -520,17 +1091,17 @@ a {
   width: 100%;
 }
 .Market-container p {
-  font-size: 22px;
+  font-size: 2.2rem;
   margin: 0;
   padding: 0;
 }
 
 .green-text {
-  color: #0ecb81;
+  color: #0ecb81 !important;
 }
 
 .red-text {
-  color: #f6465d;
+  color: #f6465d !important;
 }
 
 .Market-names_container {
@@ -578,7 +1149,7 @@ a {
   border: none;
   background-color: inherit;
   opacity: 1;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: white;
   padding-left: 10px;
 }
@@ -586,8 +1157,8 @@ a {
 .Market-names {
   grid-gap: 2rem;
   align-items: center;
-  background: #5C258D; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #106ea1, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #5c258d; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #106ea1, #5c258d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 8px 8px 0 0;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.301);
   backdrop-filter: blur(2.5px);
@@ -614,12 +1185,12 @@ a {
   grid-gap: 2rem;
   align-items: center;
   border-bottom: 1px solid #474d57;
-  color: #fff;
+  color: #eaecef;
   display: grid;
   font-size: 2.2rem;
-  font-weight: 500;
+  font-weight: 400;
   gap: 3rem;
-  grid-template-columns: 26fr 26fr 26fr 26fr 26fr;
+  grid-template-columns: repeat(5, minmax(0, 250px));
   max-height: 101px;
   padding: 2.5rem 1.5rem;
   text-align: right;
@@ -628,6 +1199,8 @@ a {
        user-select: none;
   width: 100%;
   background-color: transparent;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 .coin-row p {
   white-space: nowrap;
@@ -667,13 +1240,12 @@ a {
   flex-wrap: wrap;
   width: 100%;
   gap: 0.5rem;
-  font-family: roboto monospace;
 }
 .paginationButtons button {
   border: none;
   color: #fff;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 400;
   padding: 8px 12px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -681,13 +1253,14 @@ a {
   border: none;
   background-color: transparent;
   border-radius: 5px;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .paginationButtons .previousbutton-style,
 .paginationButtons .nextbutton-style {
   color: rgb(183, 189, 198);
   background-color: transparent;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .paginationButtons button:hover {
@@ -720,34 +1293,75 @@ a {
     overflow-wrap: break-word;
   }
   .Market-names_container p {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
   .Market-names_container .Market-names {
     box-shadow: none;
   }
 }
-.Market-chart {
+@media (max-width: 766px) {
+  .search-text {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline: 1rem;
+    gap: 1rem;
+  }
+  .search-text h2 {
+    font-size: 2.4rem;
+  }
+  .market-icon_img {
+    width: 100%;
+  }
+  .heroTextAndImage .nextgen-text {
+    font-size: 7rem;
+  }
+  .heroTextAndImage .cryptomarket-text {
+    font-size: 7rem;
+  }
+  .service-text h1 {
+    font-size: 3.2rem;
+  }
+  .service-description_container {
+    padding-inline: 1rem;
+  }
+}
+@media (max-width: 650px) {
+  .coins-chart {
+    width: 27rem;
+  }
+}
+.navbar_marketgraph {
+  z-index: 999;
+}
+
+.Market-graph_canvas {
+  max-width: 1270px;
   width: 100%;
-  max-width: 120rem;
+}
+
+.Market-chart {
   margin-top: 7rem;
-  padding-right: 2rem;
+  width: 100%;
+  padding: 3rem 3rem;
+  margin-left: 3rem;
+  position: relative;
 }
 
 .Market-graph_container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   position: relative;
-  overflow: hidden;
+  overflow-y: hidden;
   height: 100vh;
-  overflow: hidden;
   background-color: #14141f;
 }
 
 .description-text {
-  align-self: baseline;
-  margin-top: 7rem;
+  align-self: center;
+  max-width: 600px;
+  width: 100%;
+  border-right: 1px solid #fff;
 }
 
 .coinLogo {
@@ -781,6 +1395,8 @@ a {
 }
 .coin-price h1 {
   font-size: 2.7rem;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .rank-text {
@@ -799,16 +1415,16 @@ a {
 }
 .content p {
   line-height: 1.6;
-  word-wrap: break-word;
   text-align: left;
-  font-family: "Times New Roman", Times, serif;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .market-cap_container {
   position: absolute;
-  top: 5%;
   right: 0%;
-  left: 37%;
+  top: -12%;
+  left: 0;
 }
 
 .market-cap_text {
@@ -824,9 +1440,64 @@ a {
   flex-direction: row;
   justify-content: space-around;
 }
+.market-cap_innertext p {
+  color: #a1a1a1;
+}
 
+@media (max-width: 1750px) {
+  .Market-chart {
+    width: 80%;
+  }
+  .Market-graph_canvas {
+    margin-left: auto;
+  }
+}
+@media (max-width: 1550px) {
+  .Market-graph_container {
+    flex-direction: column;
+    overflow: auto;
+  }
+  .description-text {
+    max-width: none;
+    width: 100%;
+    padding-top: 10rem;
+  }
+  .Market-chart {
+    width: 100%;
+  }
+  .Market-graph_canvas {
+    max-width: 1500px;
+    width: 100%;
+  }
+  .market-cap_container {
+    position: relative;
+  }
+}
+@media (max-width: 980px) {
+  .market-cap_innertext p,
+  .market-cap_innertext h4 {
+    font-size: 14px;
+    align-items: center;
+  }
+}
+@media (max-width: 850px) {
+  .market-cap_innertext {
+    flex-wrap: wrap;
+    gap: 3rem;
+    flex-basis: content;
+  }
+  .Market-chart {
+    padding-left: 0;
+  }
+}
+@media (max-width: 680px) {
+  .service-images .img-circle {
+    display: none;
+  }
+}
 .service-container {
   background-color: #14141f;
+  padding-top: 9rem;
 }
 
 .Service-container {
@@ -899,7 +1570,8 @@ a {
   gap: 4rem;
   margin-bottom: 2rem;
 }
-.service-description_innercontainer p, .service-description_innercontainer h1 {
+.service-description_innercontainer p,
+.service-description_innercontainer h1 {
   padding: 0;
   margin: 0;
   word-wrap: break-word;
@@ -907,7 +1579,7 @@ a {
 .service-description_innercontainer p {
   line-height: 2;
   padding-right: 3rem;
-  color: #A1A1A1;
+  color: #a1a1a1;
   font-size: 14px;
 }
 .service-description_innercontainer h1 {
@@ -999,6 +1671,57 @@ a {
     min-width: 100px;
   }
 }
+@media (max-width: 766px) {
+  .service-description_innercontainer p {
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .service-description_position {
+    flex-direction: column;
+  }
+}
+@media (max-width: 680px) {
+  .service-images {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .service-images .img-circle {
+    display: block;
+    width: 38.8rem;
+  }
+  .service-images .coin-img {
+    width: 45rem;
+  }
+  .bg-gradient {
+    display: none;
+  }
+}
+@media (max-width: 479px) {
+  .service-images .img-circle {
+    width: 30rem;
+  }
+  .service-images .coin-img {
+    width: 35rem;
+  }
+  .service-description_innercontainer {
+    gap: 1.5rem;
+  }
+  .coins-chart-container {
+    display: none;
+  }
+  #light .market-container .Market-names {
+    box-shadow: none;
+  }
+  .toggle {
+    box-shadow: none;
+  }
+}
+@media (max-width: 371px) {
+  .service-images {
+    display: none;
+  }
+}
 .Contact-Us {
   display: flex;
   flex-direction: row;
@@ -1012,6 +1735,10 @@ a {
 .form-container {
   width: 100%;
   max-width: 50rem;
+}
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .contact-us_container {
@@ -1096,9 +1823,7 @@ a {
 form {
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
   width: 100%;
-  flex-wrap: wrap;
 }
 form .form-text_email {
   display: flex;
@@ -1176,8 +1901,29 @@ form textarea {
   text-align: center;
 }
 
+@media (max-width: 1000px) {
+  .contact-us_form-flex {
+    gap: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  #dark .form-container {
+    margin-top: 4.8rem;
+  }
+  .contact-us_form-flex {
+    flex-direction: column;
+  }
+  .form-container {
+    max-width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .contact-us_form-flex {
+    padding-inline: 2rem;
+  }
+}
 .section__padding {
-  padding: 4rem 4rem;
+  padding: 5.5rem 1.5rem;
 }
 
 .footer {
@@ -1189,7 +1935,7 @@ form textarea {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 .logoHeader_footer .logo {
@@ -1202,7 +1948,6 @@ form textarea {
   padding: 0;
   border: 0;
   outline: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
   font-family: inherit;
@@ -1213,13 +1958,14 @@ form textarea {
 }
 .sb__footer-Links_form input {
   border-radius: 10px;
-  background: #F8F8F8;
+  background: #f8f8f8;
   width: 100%;
-  padding: 15px 10px 15px 22px;
-  font-size: 14px;
+  padding: 18px 10px 18px 22px;
+  font-size: 1.4rem;
   border: 1px solid rgba(138, 138, 160, 0.3);
   background-color: transparent;
   color: white;
+  margin-left: -0.5rem;
 }
 .sb__footer-Links_form button {
   background-color: #5142fc;
@@ -1228,15 +1974,22 @@ form textarea {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   position: absolute;
-  right: 0;
+  right: 2%;
   top: 0;
-  padding: 1.3rem 1.5rem;
+  padding: 1.6rem 1.8rem;
+  cursor: pointer;
+}
+.sb__footer-Links_form button:active {
+  transform: scale(0.95);
+}
+.sb__footer-Links_form button:hover {
+  background-color: rgba(82, 66, 252, 0.937254902);
 }
 .sb__footer-Links_form .sendLogo {
   align-items: center;
   text-align: center;
-  width: 18px;
-  height: 18px;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .sb__footer {
@@ -1244,22 +1997,50 @@ form textarea {
   flex-direction: column;
 }
 .sb__footer p {
-  font-size: 14px;
+  font-size: 1.4rem;
   padding-bottom: 14px;
 }
 .sb__footer h3 {
-  font-size: 18px;
+  font-size: 1.8rem;
   padding-bottom: 24px;
 }
 
 .sb__footer-Links {
   display: flex;
   align-items: flex-start;
-  flex-wrap: wrap;
   width: 100%;
   text-align: left;
-  gap: 4rem;
+  gap: 2rem;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
   justify-content: center;
+}
+
+.sb__footer-Links p {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.sb__footer-Links p:hover {
+  color: #5142fc;
+  transition: all 0.3s ease-out;
+}
+
+.sb__footer-Links p::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  left: 0;
+  bottom: 40%;
+  background-color: #5142fc;
+  transition: transform 0.3s ease-out;
+}
+
+.sb__footer-Links p:hover::after {
+  transform: scaleX(1);
 }
 
 .sb__footer-Links_div {
@@ -1279,6 +2060,19 @@ form textarea {
   color: white;
   padding-right: 3rem;
   padding-top: 1rem;
+}
+.sb__footer-Links_div_logo p {
+  width: 23.5rem;
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+.sb__footer-Links_div_logo p:hover {
+  color: #fff;
+}
+.sb__footer-Links_div_logo p:hover::after {
+  display: none;
 }
 
 .sb__footer-Links_div_sm {
@@ -1301,13 +2095,13 @@ form textarea {
 }
 
 .sb__footer-Links-div h4 {
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 17px;
   margin-bottom: 0.9rem;
 }
 
 .sb__footer-Links_div p {
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 15px;
   margin: 0.5rem 0;
   cursor: pointer;
@@ -1325,7 +2119,7 @@ form textarea {
 }
 
 .sb__footer-below-links p {
-  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 15px;
   margin-left: 2rem;
   color: white;
@@ -1336,7 +2130,7 @@ hr {
 }
 
 .sb__footer-copyright p {
-  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 15px;
   color: rgb(255, 255, 255);
 }
@@ -1347,22 +2141,72 @@ hr {
   cursor: pointer;
 }
 
+@media (max-width: 990px) {
+  .sb__footer-Links {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .sb__footer-Links_div_logo {
+    flex: 1 0 100%;
+  }
+  .sb__footer-Links_div_sm {
+    width: 100%;
+    max-width: 40rem;
+    margin-left: 0;
+  }
+  .sb__footer-Links_div_sm button {
+    right: 0;
+  }
+  .sb__footer-Links_div_logo p {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media (max-width: 684px) {
+  .sb__footer-Links_div_sm {
+    max-width: 30rem;
+  }
+}
+@media (max-width: 479px) {
+  .sb__footer-Links_div_sm {
+    max-width: 50rem;
+  }
+  .sb__footer-Links {
+    gap: 2rem;
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+    row-gap: 0;
+  }
+  .sb__footer-Links_div {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .footer {
+    padding: 0;
+  }
+  .section__padding {
+    padding: 1.5rem 1.5rem;
+  }
+  .contact-us_row_box {
+    padding: 10px 20px;
+  }
+}
 @media screen and (max-width: 850px) {
   .sb__footer-heading h1 {
-    font-size: 44px;
+    font-size: 4.4rem;
     line-height: 50px;
   }
 }
 @media screen and (max-width: 550px) {
   .sb__footer-heading h1 {
-    font-size: 34px;
+    font-size: 3.4rem;
     line-height: 42px;
   }
   .sb__footer-Links div {
     margin: 1rem 0;
   }
   .sb__footer-btn p {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 20px;
   }
   .sb__footer-below {

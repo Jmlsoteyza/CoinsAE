@@ -1,14 +1,34 @@
-import React, {useState} from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Darkmode from "../images/Moon.svg";
+import Lightmode from "../images/Sun.svg";
 import { Link as ScrollLink } from "react-scroll";
-import Logo from '../images/logo.svg'
-
+import Logo from "../images/logo.svg";
+import Logo1 from "../images/logo1.svg";
+import { ThemeContext } from "../App";
 
 const Navbar = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  const [click, setClick] = useState(false);
+  const navbarClick = () => setClick(!click);
+  const [smoothNav, setSmoothNav] = useState(false) 
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 143) {
+        setSmoothNav(true);
+      } else {
+        setSmoothNav(false)
+      }
+    };
 
-  const [click, setClick] = useState(false)
+    window.addEventListener('scroll', handleScroll);
 
-  const navbarClick = () => setClick(!click)
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    };
+  }, [])
+
+  const stickyBarClass = `stickyBar ${smoothNav ? 'smoothNav' : ''}`;
 
   const Link = ({ to, onClick, children }) => {
     if (to.startsWith("#")) {
@@ -20,27 +40,28 @@ const Navbar = () => {
     }
   };
 
-
   return (
-    <div className="stickyBar">
+    <div className="navbar_open">
+    <div className={stickyBarClass}>
       <div className="navbar">
-      <div className="logoHeader">
-      <img className="logo" src={Logo} />
-        <h1>CoinsAE</h1>
+        <div className="logoHeader">
+          <img className="logo darkLogo" src={Logo} />
+          <img className="logo lightLogo" src={Logo1} />
+          <h1>CoinsAE</h1>
         </div>
-        <ul className={click ? 'ul-container active' : 'ul-container'}>
+        <ul className={click ? "ul-container active" : "ul-container"}>
           <li>
-            <Link spy={true} smooth={true} duration={500} to="#Home">
+            <Link spy={true} smooth={true} duration={500} offset={50} to="#Home">
               Home
             </Link>
           </li>
           <li>
-            <Link spy={true} smooth={true} duration={500} to="#Market">
+            <Link spy={true} smooth={true} duration={500} offset={50} to="#Market">
               Market
             </Link>
           </li>
           <li>
-            <Link spy={true} smooth={true} duration={500} to="#Service">
+            <Link spy={true} smooth={true} duration={500} offset={30} to="#Service">
               Service
             </Link>
           </li>
@@ -57,14 +78,22 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="navbar-moon-menubar">
-        <img src={Darkmode} alt="moon"></img>
-        <div  className={click ? "toggle active" : 'toggle'} onClick={navbarClick}>
-        <span></span>
-        <span></span>
-        <span></span>
-        </div>
+          {theme === "dark" ? (
+            <img src={Darkmode} alt="moon" onClick={toggleTheme}></img>
+          ) : (
+            <img src={Lightmode} alt="sun" onClick={toggleTheme}></img>
+          )}
+          <div
+            className={click ? "toggle active" : "toggle"}
+            onClick={navbarClick}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

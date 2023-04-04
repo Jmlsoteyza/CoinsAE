@@ -11,7 +11,13 @@
   .form-container {
     width: 100%;
     max-width: 50rem;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
   }
+
   .contact-us_container {
     height: auto;
     // margin-left: 12rem;
@@ -97,9 +103,8 @@
   form {
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
     width: 100%;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
   
     .form-text_email {
       display: flex;
@@ -193,4 +198,24 @@
       text-align: center;
     }
   }
-  
+  @media (max-width: 1000px) {
+    .contact-us_form-flex {
+      gap: 2rem;
+    }
+  }
+  @media (max-width: 800px) {
+    #dark .form-container{
+      margin-top: 4.8rem;
+    }
+    .contact-us_form-flex {
+      flex-direction: column;
+    }
+    .form-container {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 700px) {
+    .contact-us_form-flex {
+      padding-inline: 2rem;
+    }
+  }
