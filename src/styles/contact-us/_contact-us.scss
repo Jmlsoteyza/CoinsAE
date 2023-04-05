@@ -3,7 +3,6 @@
   flex-direction: row;
   width: 100%;
   background-color: #14141f;
-
   padding: 18rem 0rem;
   align-items: center;
   justify-content: center;
@@ -11,16 +10,13 @@
 .form-container {
   width: 100%;
   max-width: 50rem;
-
   h2 {
     text-align: center;
     margin-bottom: 2rem;
   }
 }
-
 .contact-us_container {
   height: auto;
-
   h1 {
     padding-bottom: 2rem;
     text-align: center;
@@ -43,7 +39,6 @@
   background-color: #1c1f26;
   border-radius: 10px;
   margin-top: 4.7rem;
-
   p {
     line-height: 1.6;
     padding-top: 1.5rem;
@@ -87,23 +82,19 @@
   padding: 1.2rem 1.2rem;
   border-radius: 5px;
 }
-
 .contact-us_form-flex {
   display: flex;
   gap: 7.5rem;
   width: 100%;
 }
-
 form {
   display: flex;
   flex-direction: column;
   width: 100%;
-
   .form-text_email {
     display: flex;
     gap: 2rem;
   }
-
   .form-inputs,
   textarea {
     height: 50px;
@@ -118,7 +109,6 @@ form {
     border-radius: 8px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
-
   input[type="submit"] {
     color: white;
     border: none;
@@ -131,11 +121,9 @@ form {
     padding: 13px 30px;
     background: linear-gradient(92.29deg, #86109e -9.05%, #086f7c 103.12%);
   }
-
   input[type="submit"]:hover {
     background-color: #0d7a9b;
   }
-
   textarea {
     height: 150px;
     padding: 20px;
@@ -147,7 +135,6 @@ form {
     background-color: #1c1f26;
   }
 }
-
 .cryptoNews {
   text-align: left;
   padding: 2rem 3rem;

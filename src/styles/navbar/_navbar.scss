@@ -29,10 +29,8 @@
   position: relative;
   z-index: 1;
   background-color: transparent;
-
   color: white;
   text-decoration: none;
-
   h1 {
     font-size: 30px;
     font-weight: 700;
@@ -44,11 +42,9 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
-
   h1 {
     color: #fff;
   }
-
   .logo {
     width: 3rem;
   }
@@ -60,14 +56,12 @@
   cursor: pointer;
   text-decoration: none;
   color: white;
-
   li {
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
     color: white;
   }
-
   li:hover {
     background-image: linear-gradient(
       to right,
@@ -86,7 +80,6 @@
   gap: 3rem;
   justify-content: center;
   align-items: center;
-
   img {
     max-width: 100%;
     height: 25px;
@@ -107,7 +100,6 @@
   cursor: pointer;
   overflow: hidden;
   display: none;
-
   span {
     position: absolute;
     width: 20px;
@@ -151,21 +143,20 @@
     position: fixed;
     top: 0;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     background-color: black;
     width: 100%;
     height: 100%;
     text-align: center;
     left: 0;
-    transform: translateX(-100%);
+    transform: translateY(-100%);
     transition: all 0.5s;
     overflow: hidden;
+    padding-bottom: 10rem;
   }
-
   .ul-container.active {
-    transform: translateX(0%);
+    transform: translateY(-50%);
   }
-
   .navbar-moon-menubar {
     align-items: center;
     justify-content: center;

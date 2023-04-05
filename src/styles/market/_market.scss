@@ -10,10 +10,8 @@
   display: flex;
   flex-direction: column;
   max-width: 120rem;
-  //   border: 1px solid red;
   margin: 0 auto;
   width: 100%;
-
   p {
     font-size: 2.2rem;
     margin: 0;
@@ -29,7 +27,6 @@
 .Market-names_container {
   display: flex;
   flex-direction: column;
-  //   border: 1px solid blue;
   height: auto;
   overflow-x: auto;
   white-space: nowrap;
@@ -76,20 +73,18 @@
 .Market-names {
   grid-gap: 2rem;
   align-items: center;
-  // background: linear-gradient(3deg,#1384C3,#7311A1);
-  background: #5c258d; /* fallback for old browsers */
+  background: #5c258d;
   background: -webkit-linear-gradient(
     to right,
     #1384c3,
     #5c258d
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to right,
     #106ea1,
     #5c258d
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
   border-radius: 8px 8px 0 0;
-  // background: rgba(255, 255, 255, 0.11);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.301);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
@@ -129,13 +124,11 @@
   background-color: transparent;
   word-wrap: break-word;
   word-break: break-all;
-
   p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-
   img {
     height: 50px;
   }
@@ -155,7 +148,6 @@
 .search-text {
   display: flex;
   align-items: center;
-
   h2 {
     font-size: 4.5rem;
     flex: 1;
@@ -168,7 +160,6 @@
   flex-wrap: wrap;
   width: 100%;
   gap: 0.5rem;
-
   button {
     border: none;
     color: #fff;
@@ -183,7 +174,6 @@
     border-radius: 5px;
     font-family: "IBM Plex Sans", sans-serif;
   }
-
   .previousbutton-style,
   .nextbutton-style {
     color: rgb(183, 189, 198);
@@ -218,11 +208,9 @@
     flex-wrap: nowrap;
     word-wrap: break-word;
     overflow-wrap: break-word;
-
     p {
       font-size: 1.4rem;
     }
-
     .Market-names {
       box-shadow: none;
     }

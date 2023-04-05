@@ -136,6 +136,12 @@
       align-items: center;
     }
   }
+  .Market-graph_container{
+    height: fit-content;
+  }
+  .description-text{
+    border: none;
+  }
 }
 @media (max-width: 850px) {
   .market-cap_innertext {

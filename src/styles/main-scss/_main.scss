@@ -64,7 +64,6 @@ a {
     color: #1f1f2c;
     border-right: 1px solid #1f1f2c;
   }
-
   .market-cap_innertext {
     h4{
       color: black;
@@ -91,7 +90,6 @@ a {
   transition: all 0.5s;
   position: fixed;
   top: 0;
-
   li:hover {
     color: #1f1f2c;
     font-weight: 700;
@@ -122,11 +120,9 @@ a {
     box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
     border-radius: 10px;
     transition: all 0.5s;
-
     .coins-chart-border {
       border: 1px solid #5142fc;
     }
-
     .coins-chart_rank {
       background-color: #5142fc;
       border: 14px solid #fff;
@@ -136,7 +132,6 @@ a {
         font-weight: 600;
       }
     }
-
     p {
       color: #1f1f2c;
       font-weight: 600;
@@ -147,19 +142,15 @@ a {
   background-color: #fff !important;
   transition: all 0.5s;
   padding-top: 9rem;
-
   .Market-names {
     box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
   }
-
   .coin-row {
     border-bottom: 1px solid #eaebed;
   }
-
   h2 {
     color: #1f1f2c;
   }
-
   .white {
     color: #1f1f2c;
   }
@@ -201,15 +192,12 @@ a {
 #light .service-container {
   background-color: #fff !important;
   transition: all 0.5s;
-
   h1 {
     color: #1f1f2c;
   }
-
   p {
     color: #6e6e6e;
   }
-
   .service-circle-style {
     box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
     background: #5c258d;
@@ -219,18 +207,15 @@ a {
 #light .Contact-Us {
   background-color: #fff !important;
   transition: all 0.5s;
-
   h1 {
     color: #1f1f2c;
   }
-
   .contact-us_row_box {
     background-color: #fff !important;
     box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
     color: #1f1f2c;
     border-radius: 8px;
   }
-
   .darkmode_icon {
     display: none;
   }
@@ -240,7 +225,6 @@ a {
   padding: 0rem 2.5rem;
   margin-top: 4.8rem;
   border-radius: 10px;
-
   input,
   textarea {
     margin-bottom: 2.5rem;
@@ -248,18 +232,15 @@ a {
     border: 1px solid rgba(138, 138, 160, 0.3);
     color: #1f1f2c;
   }
-
   form {
     margin: 0;
     padding: 2.2rem 0;
     padding-bottom: 0;
-
     h2 {
       color: #1f1f2c;
       text-align: center;
       margin-bottom: 2rem;
     }
-
     input[type="submit"] {
       background: #1f1f2c;
       color: white;
@@ -272,18 +253,15 @@ a {
 }
 #light .footer {
   background-color: #f8f8f8;
-
   p,
   h3,
   h1 {
     color: #1f1f2c;
   }
-
   p:hover {
     color: #5142fc;
     transition: all 0.3s ease-out;
   }
-
   .form-inputs {
     color: #1f1f2c;
   }

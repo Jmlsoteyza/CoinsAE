@@ -29,7 +29,6 @@
   font-style: inherit;
   font-weight: inherit;
   position: relative;
-
   input {
     border-radius: 10px;
     background: #f8f8f8;
@@ -70,12 +69,10 @@
 .sb__footer {
   display: flex;
   flex-direction: column;
-
   p {
     font-size: 1.4rem;
     padding-bottom: 14px;
   }
-
   h3 {
     font-size: 1.8rem;
     padding-bottom: 24px;
@@ -153,7 +150,6 @@
   margin-top: 1.8rem;
   margin-left: 1rem;
 }
-
 .socialmedia {
   display: flex;
   flex-direction: row;
@@ -161,13 +157,11 @@
 .socialmedia img {
   width: 80%;
 }
-
 .sb__footer-Links-div h4 {
   font-size: 1.4rem;
   line-height: 17px;
   margin-bottom: 0.9rem;
 }
-
 .sb__footer-Links_div p {
   font-size: 1.4rem;
   line-height: 15px;
@@ -189,7 +183,6 @@
   margin-left: 2rem;
   color: white;
 }
-
 hr {
   color: white !important;
 }
@@ -198,7 +191,6 @@ hr {
   line-height: 15px;
   color: rgb(255, 255, 255);
 }
-
 .socialmedia_logo_container:hover {
   background-color: rgb(81, 66, 252);
   transition: background 0.5s;
@@ -266,16 +258,13 @@ hr {
     font-size: 3.4rem;
     line-height: 42px;
   }
-
   .sb__footer-Links div {
     margin: 1rem 0;
   }
-
   .sb__footer-btn p {
     font-size: 1.4rem;
     line-height: 20px;
   }
-
   .sb__footer-below {
     flex-direction: column;
     justify-content: left;
@@ -288,7 +277,6 @@ hr {
     margin-top: 1rem;
   }
 }
-
 @media screen and (max-width: 400px) {
   .sb__footer-heading h1 {
     font-size: 27px;

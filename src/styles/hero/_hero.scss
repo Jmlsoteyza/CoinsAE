@@ -5,7 +5,6 @@
   text-align: center;
   background-color: #14141f;
   padding-bottom: 1rem;
-
   .heroTextAndImage {
     text-align: center;
   }
@@ -55,18 +54,15 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
   p {
     color: white;
     font-size: 2rem;
   }
-
   .coins-chart-text_displayBlock {
     display: flex;
     gap: 1rem;
     justify-content: center;
   }
-
   img {
     width: 90px;
     height: 90px;
@@ -78,7 +74,6 @@
   background-color: #131313;
   position: relative;
   max-width: 30rem;
-
   .coins-chart_rank {
     position: absolute;
     left: 0;
@@ -90,7 +85,6 @@
     background-color: #242424;
     border-radius: 19px 0 0px 0;
     border: 14px solid #131313;
-
     p {
       font-family: "IBM Plex Sans";
       font-weight: 400;
