@@ -12,7 +12,7 @@ const NavbarMarketGraph = () => {
   const navbarClick = () => setClick(!click);
 
   return (
-    <div className="navbar_open">
+    <div className="navbar_open" style={{position: relative}}>
       <div className="stickyBar navbar_marketgraph">
         <div className="navbar">
           <div className="logoHeader">
