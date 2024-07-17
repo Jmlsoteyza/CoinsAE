@@ -10,30 +10,30 @@ const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [click, setClick] = useState(false);
   const navbarClick = () => setClick(!click);
-  const [smoothNav, setSmoothNav] = useState(false) 
-  
+  const [smoothNav, setSmoothNav] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.pageYOffset > 143) {
         setSmoothNav(true);
       } else {
-        setSmoothNav(false)
+        setSmoothNav(false);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll)
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [])
+  }, []);
 
-  const stickyBarClass = `stickyBar ${smoothNav ? 'smoothNav' : ''}`;
+  const stickyBarClass = `stickyBar ${smoothNav ? "smoothNav" : ""}`;
 
   const Link = ({ to, onClick, children }) => {
     if (to.startsWith("#")) {
       return (
-        <ScrollLink to={to.slice(1)} smooth onClick={onClick}>
+        <ScrollLink to={to.slice(1)} onClick={onClick}>
           {children}
         </ScrollLink>
       );
@@ -42,58 +42,52 @@ const Navbar = () => {
 
   return (
     <div className="navbar_open">
-    <div className={stickyBarClass}>
-      <div className="navbar">
-        <div className="logoHeader">
-          <img className="logo darkLogo" src={Logo} alt={Logo}/>
-          <img className="logo lightLogo" src={Logo1} alt={Logo1}/>
-          <h1>CoinsAE</h1>
-        </div>
-        <ul className={click ? "ul-container active" : "ul-container"}>
-          <li>
-            <Link spy={true} smooth={true} duration={500} offset={50} to="#Home">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link spy={true} smooth={true} duration={500} offset={50} to="#Market">
-              Market
-            </Link>
-          </li>
-          <li>
-            <Link spy={true} smooth={true} duration={500} offset={30} to="#Service">
-              Service
-            </Link>
-          </li>
-          <li>
-            <Link
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-              to="#Contact"
+      <div className={stickyBarClass}>
+        <div className="navbar">
+          <div className="logoHeader">
+            <img className="logo darkLogo" src={Logo} alt={Logo} />
+            <img className="logo lightLogo" src={Logo1} alt={Logo1} />
+            <h1>CoinsAE</h1>
+          </div>
+          <ul className={click ? "ul-container active" : "ul-container"}>
+            <li>
+              <Link duration={500} offset={50} to="#Home">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link duration={500} offset={50} to="#Market">
+                Market
+              </Link>
+            </li>
+            <li>
+              <Link duration={500} offset={30} to="#Service">
+                Service
+              </Link>
+            </li>
+            <li>
+              <Link spy={true} offset={50} duration={500} to="#Contact">
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+          <div className="navbar-moon-menubar">
+            {theme === "dark" ? (
+              <img src={Darkmode} alt="moon" onClick={toggleTheme}></img>
+            ) : (
+              <img src={Lightmode} alt="sun" onClick={toggleTheme}></img>
+            )}
+            <div
+              className={click ? "toggle active" : "toggle"}
+              onClick={navbarClick}
             >
-              Contact Us
-            </Link>
-          </li>
-        </ul>
-        <div className="navbar-moon-menubar">
-          {theme === "dark" ? (
-            <img src={Darkmode} alt="moon" onClick={toggleTheme}></img>
-          ) : (
-            <img src={Lightmode} alt="sun" onClick={toggleTheme}></img>
-          )}
-          <div
-            className={click ? "toggle active" : "toggle"}
-            onClick={navbarClick}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };
