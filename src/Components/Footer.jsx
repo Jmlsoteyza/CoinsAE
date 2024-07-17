@@ -16,8 +16,7 @@ const Footer = () => {
               <h1>CoinsAE</h1>
             </div>
             <p>
-              Lorem ipsum dolor sit amet,consectetur adipisicing elit. Quis non,
-              fugit totam vel laboriosam vitae
+            Explore the Coins Market with CoinsAE
             </p>
           </div>
           <div className="sb__footer-Links_div">

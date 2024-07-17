@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MarketItem from "./MarketItem";
 import searchIcon from "../images/svgviewer 1.svg";
 
-const Markets = (props) => {
+const Markets = props => {
   const [currentPage, setCurrentPage] = useState(1);
   const [marketPerPage, setMarketPerPage] = useState(10);
   const [searchInput, setSearchInput] = useState("");
@@ -18,7 +18,7 @@ const Markets = (props) => {
     return pageNumbers;
   };
 
-  const handleClick = (pageNumber) => {
+  const handleClick = pageNumber => {
     setCurrentPage(pageNumber);
   };
 
@@ -29,7 +29,7 @@ const Markets = (props) => {
   let currentMarketItems = props.coins;
 
   if (searchInput.length > 0) {
-    currentMarketItems = currentMarketItems.filter((coin) =>
+    currentMarketItems = currentMarketItems.filter(coin =>
       coin.name.toLowerCase().includes(searchInput.toLocaleLowerCase())
     );
   }
@@ -39,12 +39,12 @@ const Markets = (props) => {
     marketOfLastPage
   );
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     e.preventDefault();
     setSearchInput(e.target.value);
     setLoading(true);
     setTimeout(() => {
-      currentMarketItems = props.coins.filter((coin) =>
+      currentMarketItems = props.coins.filter(coin =>
         coin.name.toLowerCase().includes(searchInput.toLocaleLowerCase())
       );
       setLoading(false);
@@ -53,7 +53,7 @@ const Markets = (props) => {
 
   return (
     <section id="Market" className="market-container">
-      <section  className="Market-container">
+      <section className="Market-container">
         <div className="search-text">
           <h2>
             <span className="market-heading_span">Market</span> Overview
@@ -79,10 +79,10 @@ const Markets = (props) => {
             <p>7 Days</p>
           </div>
 
-          {loading ? (
-            <p>Loading...</p>
+          {loading && !props ? (
+            <p>loading</p>
           ) : (
-            currentMarketItems.map((coins) => {
+            currentMarketItems.map(coins => {
               return <MarketItem coins={coins} key={coins.id} />;
             })
           )}
@@ -95,7 +95,7 @@ const Markets = (props) => {
           >
             &lt;
           </button>
-          {marketPageNumbers().map((pageNumber) => (
+          {marketPageNumbers().map(pageNumber => (
             <button
               key={pageNumber}
               onClick={() => handleClick(pageNumber)}

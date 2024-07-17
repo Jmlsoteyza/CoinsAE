@@ -112,7 +112,6 @@ const ContactUs = () => {
                 className="form-inputs"
                 type="text"
                 placeholder="Subject"
-                defaultValue=" "
               />
               <textarea
                 name="message"
@@ -120,8 +119,8 @@ const ContactUs = () => {
                 cols="30"
                 rows="10"
                 placeholder="Message"
-                defaultValue=" "
-              ></textarea>
+                style={{ resize: "none" }}
+              />
               <input type="Submit" defaultValue="send" />
             </form>
           </div>
